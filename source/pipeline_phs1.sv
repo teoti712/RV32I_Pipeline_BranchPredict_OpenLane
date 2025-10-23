@@ -1,4 +1,4 @@
-module pipeline (
+module pipeline_phs1 (
 
     input  logic         i_clk,
     input  logic         i_rst_n,
@@ -10,6 +10,7 @@ module pipeline (
     input  logic         i_flushD,
    
 
+    // signal to id/ex pipeline  register
     output logic [4:0]   o_rs1D,
     output logic [4:0]   o_rs2D,
     output logic [4:0]   o_rdD,
@@ -18,6 +19,8 @@ module pipeline (
     output logic [31:0]  o_rs1_dataD,
     output logic [31:0]  o_rs2_dataD,
     output logic [31:0]  o_immExtD,
+
+    // signal control unit
     output logic         reg_wrD,     
     output logic [1:0]   result_srcD, 
     output logic         mem_wrD,     

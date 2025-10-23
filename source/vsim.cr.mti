@@ -1,0 +1,153 @@
+{C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/fetch/instr_mem.sv} {1 {vlog -work work -vopt -sv {C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/fetch/instr_mem.sv}
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module inst_mem
+
+Top level modules:
+	inst_mem
+
+} {} {}} {C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/IFID_register.sv} {1 {vlog -work work -vopt -sv {C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/IFID_register.sv}
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module IFID_register
+
+Top level modules:
+	IFID_register
+
+} {} {}} {C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/pipeline_phase2.sv} {1 {vlog -work work -vopt -sv {C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/pipeline_phase2.sv}
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module pipeline
+
+Top level modules:
+	pipeline
+
+} {} {}} {C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/fetch/pc_plus4F.sv} {1 {vlog -work work -vopt -sv {C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/fetch/pc_plus4F.sv}
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module pc_plus4F
+
+Top level modules:
+	pc_plus4F
+
+} {} {}} {C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/execute/tb_execute.sv} {1 {vlog -work work -vopt -sv {C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/execute/tb_execute.sv}
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module tb_execute
+
+Top level modules:
+	tb_execute
+
+} {} {}} {C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/decode/control_unit.sv} {1 {vlog -work work -vopt -sv {C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/decode/control_unit.sv}
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module control_unit
+
+Top level modules:
+	control_unit
+
+} {} {}} {C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/execute/mux_alu_src.sv} {1 {vlog -work work -vopt -sv {C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/execute/mux_alu_src.sv}
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module mux_alu_src
+
+Top level modules:
+	mux_alu_src
+
+} {} {}} {C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/fetch/pc.sv} {1 {vlog -work work -vopt -sv {C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/fetch/pc.sv}
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module pc
+
+Top level modules:
+	pc
+
+} {} {}} {C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/execute/slt.sv} {1 {vlog -work work -vopt -sv {C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/execute/slt.sv}
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module slt
+
+Top level modules:
+	slt
+
+} {} {}} {C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/decode/imm_gen.sv} {1 {vlog -work work -vopt -sv {C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/decode/imm_gen.sv}
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module imm_gen
+
+Top level modules:
+	imm_gen
+
+} {} {}} {C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/decode/decode.sv} {1 {vlog -work work -vopt -sv {C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/decode/decode.sv}
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module decode
+
+Top level modules:
+	decode
+
+} {} {}} {C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/tb_pipeline_phs2.sv} {1 {vlog -work work -vopt -sv {C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/tb_pipeline_phs2.sv}
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module tb_pipeline_jump_branch
+
+Top level modules:
+	tb_pipeline_jump_branch
+
+} {} {}} {C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/decode/reg_file.sv} {1 {vlog -work work -vopt -sv {C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/decode/reg_file.sv}
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module reg_file
+
+Top level modules:
+	reg_file
+
+} {} {}} {C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/execute/mux_forward.sv} {1 {vlog -work work -vopt -sv {C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/execute/mux_forward.sv}
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module mux_forward
+
+Top level modules:
+	mux_forward
+
+} {} {}} {C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/execute/excute2.sv} {0 {vlog -work work -vopt -sv {C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/execute/excute2.sv}
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module execute
+** Error: C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/execute/excute2.sv(19): near "output": syntax error, unexpected output, expecting ')'
+
+} {4.0 5.0} {}} {C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/fetch/fetch.sv} {1 {vlog -work work -vopt -sv {C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/fetch/fetch.sv}
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module fetch
+
+Top level modules:
+	fetch
+
+} {} {}} {C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/execute/add.sv} {1 {vlog -work work -vopt -sv {C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/execute/add.sv}
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module add
+
+Top level modules:
+	add
+
+} {} {}} {C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/execute/alu.sv} {1 {vlog -work work -vopt -sv {C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/execute/alu.sv}
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module alu
+
+Top level modules:
+	alu
+
+} {} {}} {C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/execute/execute.sv} {1 {vlog -work work -vopt -sv {C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/execute/execute.sv}
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module execute
+
+Top level modules:
+	execute
+
+} {} {}} {C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/IDEX_register.sv} {1 {vlog -work work -vopt -sv {C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/IDEX_register.sv}
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module IDEX_register
+
+Top level modules:
+	IDEX_register
+
+} {} {}} {C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/pipeline.sv} {1 {vlog -work work -vopt -sv {C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/pipeline.sv}
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module pipeline
+
+Top level modules:
+	pipeline
+
+} {} {}} {C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/tb.sv} {1 {vlog -work work -vopt -sv {C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/tb.sv}
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module tb_pipeline
+
+Top level modules:
+	tb_pipeline
+
+} {} {}}

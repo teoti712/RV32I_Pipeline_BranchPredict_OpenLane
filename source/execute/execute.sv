@@ -1,26 +1,29 @@
-module excute (
+module execute (
+
     input  logic [31:0] i_rs1_dataE,
     input  logic [31:0] i_rs2_dataE,
+    input  logic [31:0] i_alu_resultM,
+    input  logic [31:0] i_resultW,
     input  logic [31:0] i_pcE,
     input  logic [31:0] i_immExtE,
-    input  logic [31:0] i_resultW,
-    input  logic [31:0] i_alu_resultM,
 
-    input  logic        i_forwardAE,
-    input  logic        i_forwardBE,
+    input  logic [1:0]  i_forwardAE,
+    input  logic [1:0]  i_forwardBE,
     input  logic        i_alu_srcAE,
     input  logic        i_alu_srcBE,
     input  logic [3:0]  i_alu_ctrlE,
 
     output logic        o_jump_enE,
-    output logic [31:0] o_alu_resultE,
     output logic [31:0] o_wr_dataE,
+    output logic [31:0] o_alu_resultE,
     output logic [31:0] o_pc_targetE);
 
     logic [31:0] w_mux_alu_srcAE;
     logic [31:0] w_mux_alu_srcBE;
     logic [31:0] w_srcAE;
     logic [31:0] w_srcBE;
+
+
 
     mux_forward mux_forwardA (
         .i_sel(i_forwardAE),
@@ -38,6 +41,7 @@ module excute (
         .o_mux(w_mux_alu_srcBE)
     );
 
+
     mux_alu_src mux_alu_srcAE (
         .i_sel(i_alu_srcAE),
         .i_A(w_mux_alu_srcAE),
@@ -51,6 +55,7 @@ module excute (
         .i_B(i_immExtE),
         .o_mux(w_srcBE)
     );
+
 
     add add_inst (
         .i_pcE(i_pcE),
@@ -66,6 +71,7 @@ module excute (
         .o_jump(o_jump_enE)
     );
 
-    assign o_wr_dataE = w_mux_alu_srcBE;
+    assign o_wr_dataE = w_srcBE;
+
 
 endmodule
