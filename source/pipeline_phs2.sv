@@ -32,6 +32,7 @@ module pipeline_phs2 (
     output logic        reg_wrE,
     output logic [1:0]  result_srcE,
     output logic        mem_wrE,
+    output logic [3:0]  o_alu_ctrlE,
     output logic        o_pc_srcE,
 
     output logic [31:0] o_wr_dataE,
@@ -111,6 +112,7 @@ module pipeline_phs2 (
 
     assign w_o_and = w_branchE & w_jump_enE;
     assign o_pc_srcE = w_o_and | w_jumpE;
+    assign o_alu_ctrlE = w_alu_ctrlE;
 
 
 endmodule
