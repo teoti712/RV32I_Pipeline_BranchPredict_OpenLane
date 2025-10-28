@@ -18,6 +18,8 @@ module IDEX_register (
     input  logic [3:0]  alu_ctrlD,
     input  logic        alu_srcAD,
     input  logic        alu_srcBD,
+    input  logic [31:0] i_instD,
+
 
     output logic [4:0]  o_rs1E,
     output logic [4:0]  o_rs2E,
@@ -34,7 +36,9 @@ module IDEX_register (
     output logic        branchE,
     output logic [3:0]  alu_ctrlE,
     output logic        alu_srcAE,
-    output logic        alu_srcBE
+    output logic        alu_srcBE,
+    output logic [31:0] o_instE
+
 );
 
     always_ff @(posedge i_clk or negedge i_rst_n) begin
@@ -55,6 +59,7 @@ module IDEX_register (
             alu_ctrlE    <= 4'd0;
             alu_srcAE    <= 1'b0;
             alu_srcBE    <= 1'b0;
+            o_instE      <= 32'd0;
         end else begin
             o_rs1E       <= i_rs1D;
             o_rs2E       <= i_rs2D;
@@ -72,6 +77,7 @@ module IDEX_register (
             alu_ctrlE    <= alu_ctrlD;
             alu_srcAE    <= alu_srcAD;
             alu_srcBE    <= alu_srcBD;
+            o_instE      <= i_instD;
         end
     end
 

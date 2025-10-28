@@ -11,6 +11,7 @@ module pipeline_phs1 (
    
 
     // signal to id/ex pipeline  register
+    output logic [31:0]  o_instD,
     output logic [4:0]   o_rs1D,
     output logic [4:0]   o_rs2D,
     output logic [4:0]   o_rdD,
@@ -73,6 +74,8 @@ module pipeline_phs1 (
     assign o_rs1D = w_instD[19:15];
     assign o_rs2D = w_instD[24:20];
     assign o_rdD  = w_instD[11:7];
+    assign o_instD  = w_instD;
+
     
 
 
