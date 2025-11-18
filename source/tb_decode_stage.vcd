@@ -1,0 +1,660 @@
+$date
+	Mon Nov 17 15:23:00 2025
+$end
+$version
+	QuestaSim Version 10.2c
+$end
+$timescale
+	1ps
+$end
+
+$scope module tb_decode_stage $end
+$var parameter 32 ! INST_ADD $end
+$var parameter 32 " INST_ADDI $end
+$var parameter 32 # INST_SW $end
+$var parameter 32 $ INST_BEQ $end
+$var parameter 32 % INST_JAL $end
+$var reg 1 & i_clk $end
+$var reg 1 ' i_rst_n $end
+$var reg 32 ( i_instD [31:0] $end
+$var reg 32 ) i_resultW [31:0] $end
+$var reg 5 * i_rdW [4:0] $end
+$var reg 1 + i_reg_wrW $end
+$var reg 32 , o_immExtD [31:0] $end
+$var reg 32 - o_rs1_dataD [31:0] $end
+$var reg 32 . o_rs2_dataD [31:0] $end
+$var reg 1 / reg_wrD $end
+$var reg 2 0 result_srcD [1:0] $end
+$var reg 1 1 mem_wrD $end
+$var reg 1 2 jumpD $end
+$var reg 1 3 branchD $end
+$var reg 4 4 alu_ctrlD [3:0] $end
+$var reg 1 5 alu_srcAD $end
+$var reg 1 6 alu_srcBD $end
+
+$scope module dut $end
+$var wire 1 7 i_clk $end
+$var wire 1 8 i_rst_n $end
+$var wire 1 9 i_instD [31] $end
+$var wire 1 : i_instD [30] $end
+$var wire 1 ; i_instD [29] $end
+$var wire 1 < i_instD [28] $end
+$var wire 1 = i_instD [27] $end
+$var wire 1 > i_instD [26] $end
+$var wire 1 ? i_instD [25] $end
+$var wire 1 @ i_instD [24] $end
+$var wire 1 A i_instD [23] $end
+$var wire 1 B i_instD [22] $end
+$var wire 1 C i_instD [21] $end
+$var wire 1 D i_instD [20] $end
+$var wire 1 E i_instD [19] $end
+$var wire 1 F i_instD [18] $end
+$var wire 1 G i_instD [17] $end
+$var wire 1 H i_instD [16] $end
+$var wire 1 I i_instD [15] $end
+$var wire 1 J i_instD [14] $end
+$var wire 1 K i_instD [13] $end
+$var wire 1 L i_instD [12] $end
+$var wire 1 M i_instD [11] $end
+$var wire 1 N i_instD [10] $end
+$var wire 1 O i_instD [9] $end
+$var wire 1 P i_instD [8] $end
+$var wire 1 Q i_instD [7] $end
+$var wire 1 R i_instD [6] $end
+$var wire 1 S i_instD [5] $end
+$var wire 1 T i_instD [4] $end
+$var wire 1 U i_instD [3] $end
+$var wire 1 V i_instD [2] $end
+$var wire 1 W i_instD [1] $end
+$var wire 1 X i_instD [0] $end
+$var wire 1 Y i_resultW [31] $end
+$var wire 1 Z i_resultW [30] $end
+$var wire 1 [ i_resultW [29] $end
+$var wire 1 \ i_resultW [28] $end
+$var wire 1 ] i_resultW [27] $end
+$var wire 1 ^ i_resultW [26] $end
+$var wire 1 _ i_resultW [25] $end
+$var wire 1 ` i_resultW [24] $end
+$var wire 1 a i_resultW [23] $end
+$var wire 1 b i_resultW [22] $end
+$var wire 1 c i_resultW [21] $end
+$var wire 1 d i_resultW [20] $end
+$var wire 1 e i_resultW [19] $end
+$var wire 1 f i_resultW [18] $end
+$var wire 1 g i_resultW [17] $end
+$var wire 1 h i_resultW [16] $end
+$var wire 1 i i_resultW [15] $end
+$var wire 1 j i_resultW [14] $end
+$var wire 1 k i_resultW [13] $end
+$var wire 1 l i_resultW [12] $end
+$var wire 1 m i_resultW [11] $end
+$var wire 1 n i_resultW [10] $end
+$var wire 1 o i_resultW [9] $end
+$var wire 1 p i_resultW [8] $end
+$var wire 1 q i_resultW [7] $end
+$var wire 1 r i_resultW [6] $end
+$var wire 1 s i_resultW [5] $end
+$var wire 1 t i_resultW [4] $end
+$var wire 1 u i_resultW [3] $end
+$var wire 1 v i_resultW [2] $end
+$var wire 1 w i_resultW [1] $end
+$var wire 1 x i_resultW [0] $end
+$var wire 1 y i_rdW [4] $end
+$var wire 1 z i_rdW [3] $end
+$var wire 1 { i_rdW [2] $end
+$var wire 1 | i_rdW [1] $end
+$var wire 1 } i_rdW [0] $end
+$var wire 1 ~ i_reg_wrW $end
+$var reg 32 !! o_immExtD [31:0] $end
+$var reg 32 "! o_rs1_dataD [31:0] $end
+$var reg 32 #! o_rs2_dataD [31:0] $end
+$var reg 1 $! reg_wrD $end
+$var reg 2 %! result_srcD [1:0] $end
+$var reg 1 &! mem_wrD $end
+$var reg 1 '! jumpD $end
+$var reg 1 (! branchD $end
+$var reg 4 )! alu_ctrlD [3:0] $end
+$var reg 1 *! alu_srcAD $end
+$var reg 1 +! alu_srcBD $end
+
+$scope module imm_gen_inst $end
+$var wire 1 9 i_instD [31] $end
+$var wire 1 : i_instD [30] $end
+$var wire 1 ; i_instD [29] $end
+$var wire 1 < i_instD [28] $end
+$var wire 1 = i_instD [27] $end
+$var wire 1 > i_instD [26] $end
+$var wire 1 ? i_instD [25] $end
+$var wire 1 @ i_instD [24] $end
+$var wire 1 A i_instD [23] $end
+$var wire 1 B i_instD [22] $end
+$var wire 1 C i_instD [21] $end
+$var wire 1 D i_instD [20] $end
+$var wire 1 E i_instD [19] $end
+$var wire 1 F i_instD [18] $end
+$var wire 1 G i_instD [17] $end
+$var wire 1 H i_instD [16] $end
+$var wire 1 I i_instD [15] $end
+$var wire 1 J i_instD [14] $end
+$var wire 1 K i_instD [13] $end
+$var wire 1 L i_instD [12] $end
+$var wire 1 M i_instD [11] $end
+$var wire 1 N i_instD [10] $end
+$var wire 1 O i_instD [9] $end
+$var wire 1 P i_instD [8] $end
+$var wire 1 Q i_instD [7] $end
+$var wire 1 R i_instD [6] $end
+$var wire 1 S i_instD [5] $end
+$var wire 1 T i_instD [4] $end
+$var wire 1 U i_instD [3] $end
+$var wire 1 V i_instD [2] $end
+$var wire 1 W i_instD [1] $end
+$var wire 1 X i_instD [0] $end
+$var reg 32 ,! o_immExtD [31:0] $end
+$upscope $end
+
+$scope module reg_file_inst $end
+$var wire 1 Y i_rd_data [31] $end
+$var wire 1 Z i_rd_data [30] $end
+$var wire 1 [ i_rd_data [29] $end
+$var wire 1 \ i_rd_data [28] $end
+$var wire 1 ] i_rd_data [27] $end
+$var wire 1 ^ i_rd_data [26] $end
+$var wire 1 _ i_rd_data [25] $end
+$var wire 1 ` i_rd_data [24] $end
+$var wire 1 a i_rd_data [23] $end
+$var wire 1 b i_rd_data [22] $end
+$var wire 1 c i_rd_data [21] $end
+$var wire 1 d i_rd_data [20] $end
+$var wire 1 e i_rd_data [19] $end
+$var wire 1 f i_rd_data [18] $end
+$var wire 1 g i_rd_data [17] $end
+$var wire 1 h i_rd_data [16] $end
+$var wire 1 i i_rd_data [15] $end
+$var wire 1 j i_rd_data [14] $end
+$var wire 1 k i_rd_data [13] $end
+$var wire 1 l i_rd_data [12] $end
+$var wire 1 m i_rd_data [11] $end
+$var wire 1 n i_rd_data [10] $end
+$var wire 1 o i_rd_data [9] $end
+$var wire 1 p i_rd_data [8] $end
+$var wire 1 q i_rd_data [7] $end
+$var wire 1 r i_rd_data [6] $end
+$var wire 1 s i_rd_data [5] $end
+$var wire 1 t i_rd_data [4] $end
+$var wire 1 u i_rd_data [3] $end
+$var wire 1 v i_rd_data [2] $end
+$var wire 1 w i_rd_data [1] $end
+$var wire 1 x i_rd_data [0] $end
+$var wire 1 y i_rd_addr [4] $end
+$var wire 1 z i_rd_addr [3] $end
+$var wire 1 { i_rd_addr [2] $end
+$var wire 1 | i_rd_addr [1] $end
+$var wire 1 } i_rd_addr [0] $end
+$var wire 1 E i_rs1_addr [4] $end
+$var wire 1 F i_rs1_addr [3] $end
+$var wire 1 G i_rs1_addr [2] $end
+$var wire 1 H i_rs1_addr [1] $end
+$var wire 1 I i_rs1_addr [0] $end
+$var wire 1 @ i_rs2_addr [4] $end
+$var wire 1 A i_rs2_addr [3] $end
+$var wire 1 B i_rs2_addr [2] $end
+$var wire 1 C i_rs2_addr [1] $end
+$var wire 1 D i_rs2_addr [0] $end
+$var wire 1 ~ i_rd_wren $end
+$var wire 1 8 i_rst_n $end
+$var wire 1 7 i_clk $end
+$var reg 32 -! o_rs1_data [31:0] $end
+$var reg 32 .! o_rs2_data [31:0] $end
+$upscope $end
+
+$scope module ctr_unit_inst $end
+$var parameter 7 /! op_RTYPE $end
+$var parameter 7 0! op_ITYPE $end
+$var parameter 7 1! op_LOAD $end
+$var parameter 7 2! op_STORE $end
+$var parameter 7 3! op_BRANCH $end
+$var parameter 7 4! op_JAL $end
+$var parameter 7 5! op_JALR $end
+$var parameter 7 6! op_LUI $end
+$var parameter 7 7! op_AUIPC $end
+$var parameter 4 8! func_ADD $end
+$var parameter 4 9! func_SUB $end
+$var parameter 4 :! func_SLL $end
+$var parameter 4 ;! func_SLT $end
+$var parameter 4 <! func_SLTU $end
+$var parameter 4 =! func_XOR $end
+$var parameter 4 >! func_SRL $end
+$var parameter 4 ?! func_SRA $end
+$var parameter 4 @! func_OR $end
+$var parameter 4 A! func_AND $end
+$var parameter 3 B! func_BEQ $end
+$var parameter 3 C! func_BNE $end
+$var parameter 3 D! func_BLT $end
+$var parameter 3 E! func_BGE $end
+$var parameter 3 F! func_BLTU $end
+$var parameter 3 G! func_BGEU $end
+$var wire 1 R i_op [6] $end
+$var wire 1 S i_op [5] $end
+$var wire 1 T i_op [4] $end
+$var wire 1 U i_op [3] $end
+$var wire 1 V i_op [2] $end
+$var wire 1 W i_op [1] $end
+$var wire 1 X i_op [0] $end
+$var wire 1 J i_func3 [2] $end
+$var wire 1 K i_func3 [1] $end
+$var wire 1 L i_func3 [0] $end
+$var wire 1 9 i_func7 [6] $end
+$var wire 1 : i_func7 [5] $end
+$var wire 1 ; i_func7 [4] $end
+$var wire 1 < i_func7 [3] $end
+$var wire 1 = i_func7 [2] $end
+$var wire 1 > i_func7 [1] $end
+$var wire 1 ? i_func7 [0] $end
+$var reg 1 H! reg_wrD $end
+$var reg 2 I! result_srcD [1:0] $end
+$var reg 1 J! mem_wrD $end
+$var reg 1 K! jumpD $end
+$var reg 1 L! branchD $end
+$var reg 4 M! alu_ctrlD [3:0] $end
+$var reg 1 N! alu_srcAD $end
+$var reg 1 O! alu_srcBD $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0&
+0'
+b0 (
+b0 )
+b0 *
+0+
+bx ,
+b0 -
+b0 .
+0/
+b0 0
+01
+02
+03
+b0 4
+05
+06
+bx !!
+b0 "!
+b0 #!
+0$!
+b0 %!
+0&!
+0'!
+0(!
+b0 )!
+0*!
+0+!
+bx ,!
+b0 -!
+b0 .!
+0H!
+b0 I!
+0J!
+0K!
+0L!
+b0 M!
+0N!
+0O!
+b1100000000101100110011 !
+b101000101000001000010011 "
+b100000111010010000100011 #
+b1000000010000011001100011 $
+b111101101111 %
+b110011 /!
+b10011 0!
+b11 1!
+b100011 2!
+b1100011 3!
+b1101111 4!
+b1100111 5!
+b110111 6!
+b10111 7!
+b0 8!
+b1000 9!
+b1 :!
+b10 ;!
+b11 <!
+b100 =!
+b101 >!
+b1101 ?!
+b110 @!
+b111 A!
+b0 B!
+b1 C!
+b100 D!
+b101 E!
+b110 F!
+b111 G!
+07
+08
+0X
+0W
+0V
+0U
+0T
+0S
+0R
+0Q
+0P
+0O
+0N
+0M
+0L
+0K
+0J
+0I
+0H
+0G
+0F
+0E
+0D
+0C
+0B
+0A
+0@
+0?
+0>
+0=
+0<
+0;
+0:
+09
+0x
+0w
+0v
+0u
+0t
+0s
+0r
+0q
+0p
+0o
+0n
+0m
+0l
+0k
+0j
+0i
+0h
+0g
+0f
+0e
+0d
+0c
+0b
+0a
+0`
+0_
+0^
+0]
+0\
+0[
+0Z
+0Y
+0}
+0|
+0{
+0z
+0y
+0~
+$end
+#5000
+1&
+17
+#10000
+0&
+07
+#15000
+1&
+17
+#20000
+0&
+07
+#25000
+1&
+17
+#30000
+0&
+07
+#35000
+1&
+17
+1'
+18
+#40000
+0&
+07
+#45000
+1&
+17
+b1100000000101100110011 (
+1X
+1W
+1T
+1S
+1P
+1O
+1M
+1D
+1C
+1H!
+1$!
+1/
+#50000
+0&
+07
+#55000
+1&
+17
+#60000
+0&
+07
+#65000
+1&
+17
+b101000101000001000010011 (
+0S
+0P
+0M
+1I
+1G
+0D
+1A
+b1010 ,!
+1O!
+1+!
+b1010 !!
+b1010 ,
+16
+#70000
+0&
+07
+#75000
+1&
+17
+#80000
+0&
+07
+#85000
+1&
+17
+b11011110101011011011111011101111 )
+b100 *
+1+
+1{
+1x
+1w
+1v
+1u
+1s
+1r
+1q
+1o
+1n
+1m
+1l
+1k
+1i
+1h
+1f
+1e
+1c
+1a
+1_
+1^
+1]
+1\
+1Z
+1Y
+1~
+#90000
+0&
+07
+#95000
+1&
+17
+#100000
+0&
+07
+#105000
+1&
+17
+0+
+0~
+#110000
+0&
+07
+#115000
+1&
+17
+b100000111010010000100011 (
+0T
+1S
+0O
+1N
+1K
+1H
+0C
+b1000 ,!
+1J!
+0H!
+0$!
+1&!
+b1000 !!
+b1000 ,
+11
+0/
+#120000
+0&
+07
+#125000
+1&
+17
+#130000
+0&
+07
+#135000
+1&
+17
+b1000000010000011001100011 (
+1R
+1O
+0K
+0I
+0G
+0A
+1@
+b1100 ,!
+0O!
+1L!
+0J!
+0&!
+1(!
+0+!
+b1100 !!
+b1100 ,
+06
+13
+01
+#140000
+0&
+07
+#145000
+1&
+17
+#150000
+0&
+07
+#155000
+1&
+17
+b111101101111 (
+1V
+1U
+1P
+1M
+0H
+0@
+b0 ,!
+1O!
+0L!
+1K!
+b10 I!
+1H!
+1$!
+b10 %!
+1'!
+0(!
+1+!
+b0 !!
+b0 ,
+16
+03
+12
+b10 0
+1/
+#160000
+0&
+07
+#165000
+1&
+17
+#170000
+0&
+07
+#175000
+1&
+17
+#180000
+0&
+07
+#185000
+1&
+17
+#190000
+0&
+07
+#195000
+1&
+17
+#200000
+0&
+07
+#205000
+1&
+17
+#210000
+0&
+07
+#215000
+1&
+17

@@ -3,17 +3,15 @@ module imm_gen(
 	output logic [31:0] o_immExtD
 );
 	always_comb begin
-		case(i_instD[6:0])
-		
+		case(i_instD[6:0])	
 				// Immediate-type
-        	7'b0010011: begin
+        7'b0010011: begin
 			case(i_instD[14:12])
 				3'b001: o_immExtD = i_instD[24:20];
 				3'b101: o_immExtD = i_instD[24:20];
 				default: o_immExtD = {{20{i_instD[31]}}, i_instD[31:20] };
-			endcase
-    		end
-
+			endcase 
+			end
 				// Load-type
 		7'b0000011: o_immExtD = {{20{i_instD[31]}}, i_instD[31:20] };
 

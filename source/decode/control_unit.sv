@@ -32,15 +32,13 @@ module control_unit (
                      func_SRA  = 4'b1_101,
                      func_OR   = 4'b0_110,   
                      func_AND  = 4'b0_111;
-
-localparam [2:0]
+    localparam [2:0]
                      func_BEQ  = 3'b000,   
                      func_BNE  = 3'b001,   
                      func_BLT  = 3'b100,   
                      func_BGE  = 3'b101,   
                      func_BLTU = 3'b110,   
                      func_BGEU = 3'b111;   
-
  
     always_comb begin
         if(i_op == 7'b0000000) begin
@@ -90,7 +88,6 @@ localparam [2:0]
                             func_BLTU:  alu_ctrlD = 4'd8; 
                             func_BGEU:  alu_ctrlD = 4'd8;
                             default:    alu_ctrlD = 4'd0;
-
                       endcase
             end
             op_LOAD:  {reg_wrD, result_srcD, mem_wrD, jumpD, branchD, alu_ctrlD, alu_srcAD, alu_srcBD} = {1'b1, 2'b01, 1'b0, 1'b0, 1'b0, 4'd0, 1'b0, 1'b1};

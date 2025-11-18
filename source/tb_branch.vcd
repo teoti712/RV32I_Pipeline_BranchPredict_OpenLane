@@ -1,0 +1,699 @@
+$date
+	Mon Nov 17 15:47:06 2025
+$end
+$version
+	QuestaSim Version 10.2c
+$end
+$timescale
+	1ps
+$end
+
+$scope module tb_branch $end
+$var reg 32 ! i_rs1_dataE [31:0] $end
+$var reg 32 " i_rs2_dataE [31:0] $end
+$var reg 3 # i_funct3E [2:0] $end
+$var reg 1 $ o_branch_takenE $end
+$var integer 32 % errors $end
+$var integer 32 & tests $end
+
+$scope task run_case $end
+$upscope $end
+
+$scope module dut $end
+$var wire 1 ' i_rs1_dataE [31] $end
+$var wire 1 ( i_rs1_dataE [30] $end
+$var wire 1 ) i_rs1_dataE [29] $end
+$var wire 1 * i_rs1_dataE [28] $end
+$var wire 1 + i_rs1_dataE [27] $end
+$var wire 1 , i_rs1_dataE [26] $end
+$var wire 1 - i_rs1_dataE [25] $end
+$var wire 1 . i_rs1_dataE [24] $end
+$var wire 1 / i_rs1_dataE [23] $end
+$var wire 1 0 i_rs1_dataE [22] $end
+$var wire 1 1 i_rs1_dataE [21] $end
+$var wire 1 2 i_rs1_dataE [20] $end
+$var wire 1 3 i_rs1_dataE [19] $end
+$var wire 1 4 i_rs1_dataE [18] $end
+$var wire 1 5 i_rs1_dataE [17] $end
+$var wire 1 6 i_rs1_dataE [16] $end
+$var wire 1 7 i_rs1_dataE [15] $end
+$var wire 1 8 i_rs1_dataE [14] $end
+$var wire 1 9 i_rs1_dataE [13] $end
+$var wire 1 : i_rs1_dataE [12] $end
+$var wire 1 ; i_rs1_dataE [11] $end
+$var wire 1 < i_rs1_dataE [10] $end
+$var wire 1 = i_rs1_dataE [9] $end
+$var wire 1 > i_rs1_dataE [8] $end
+$var wire 1 ? i_rs1_dataE [7] $end
+$var wire 1 @ i_rs1_dataE [6] $end
+$var wire 1 A i_rs1_dataE [5] $end
+$var wire 1 B i_rs1_dataE [4] $end
+$var wire 1 C i_rs1_dataE [3] $end
+$var wire 1 D i_rs1_dataE [2] $end
+$var wire 1 E i_rs1_dataE [1] $end
+$var wire 1 F i_rs1_dataE [0] $end
+$var wire 1 G i_rs2_dataE [31] $end
+$var wire 1 H i_rs2_dataE [30] $end
+$var wire 1 I i_rs2_dataE [29] $end
+$var wire 1 J i_rs2_dataE [28] $end
+$var wire 1 K i_rs2_dataE [27] $end
+$var wire 1 L i_rs2_dataE [26] $end
+$var wire 1 M i_rs2_dataE [25] $end
+$var wire 1 N i_rs2_dataE [24] $end
+$var wire 1 O i_rs2_dataE [23] $end
+$var wire 1 P i_rs2_dataE [22] $end
+$var wire 1 Q i_rs2_dataE [21] $end
+$var wire 1 R i_rs2_dataE [20] $end
+$var wire 1 S i_rs2_dataE [19] $end
+$var wire 1 T i_rs2_dataE [18] $end
+$var wire 1 U i_rs2_dataE [17] $end
+$var wire 1 V i_rs2_dataE [16] $end
+$var wire 1 W i_rs2_dataE [15] $end
+$var wire 1 X i_rs2_dataE [14] $end
+$var wire 1 Y i_rs2_dataE [13] $end
+$var wire 1 Z i_rs2_dataE [12] $end
+$var wire 1 [ i_rs2_dataE [11] $end
+$var wire 1 \ i_rs2_dataE [10] $end
+$var wire 1 ] i_rs2_dataE [9] $end
+$var wire 1 ^ i_rs2_dataE [8] $end
+$var wire 1 _ i_rs2_dataE [7] $end
+$var wire 1 ` i_rs2_dataE [6] $end
+$var wire 1 a i_rs2_dataE [5] $end
+$var wire 1 b i_rs2_dataE [4] $end
+$var wire 1 c i_rs2_dataE [3] $end
+$var wire 1 d i_rs2_dataE [2] $end
+$var wire 1 e i_rs2_dataE [1] $end
+$var wire 1 f i_rs2_dataE [0] $end
+$var wire 1 g i_funct3E [2] $end
+$var wire 1 h i_funct3E [1] $end
+$var wire 1 i i_funct3E [0] $end
+$var reg 1 j o_branch_takenE $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 !
+b0 "
+b0 #
+1$
+1j
+b0 %
+b0 &
+0F
+0E
+0D
+0C
+0B
+0A
+0@
+0?
+0>
+0=
+0<
+0;
+0:
+09
+08
+07
+06
+05
+04
+03
+02
+01
+00
+0/
+0.
+0-
+0,
+0+
+0*
+0)
+0(
+0'
+0f
+0e
+0d
+0c
+0b
+0a
+0`
+0_
+0^
+0]
+0\
+0[
+0Z
+0Y
+0X
+0W
+0V
+0U
+0T
+0S
+0R
+0Q
+0P
+0O
+0N
+0M
+0L
+0K
+0J
+0I
+0H
+0G
+0i
+0h
+0g
+$end
+#5000
+b1 &
+b101 !
+b101 "
+1f
+1d
+1F
+1D
+0j
+1j
+#6000
+b10 &
+b111 "
+1e
+0j
+0$
+#7000
+b11 &
+b10010001101000101011001111000 !
+b10010001101000101011001111000 "
+b1 #
+1i
+0f
+0e
+0d
+1c
+1b
+1a
+1`
+1]
+1\
+1Z
+1X
+1T
+1R
+1Q
+1M
+1J
+0F
+0D
+1C
+1B
+1A
+1@
+1=
+1<
+1:
+18
+14
+12
+11
+1-
+1*
+#8000
+b100 &
+b10000111011001010100001100100001 "
+1f
+0c
+0b
+0`
+1^
+0\
+0Z
+1V
+0R
+1P
+1N
+1L
+0J
+1G
+1j
+1$
+#9000
+b101 &
+b11111111111111111111111111110000 !
+b101 "
+b100 #
+0i
+1g
+1d
+0a
+0^
+0]
+0X
+0V
+0T
+0Q
+0P
+0N
+0M
+0L
+0G
+0C
+1?
+1>
+1;
+19
+17
+16
+15
+13
+10
+1/
+1.
+1,
+1+
+1)
+1(
+1'
+0j
+1j
+#10000
+b110 &
+b1010 !
+1E
+1C
+0B
+0A
+0@
+0?
+0>
+0=
+0<
+0;
+0:
+09
+08
+07
+06
+05
+04
+03
+02
+01
+00
+0/
+0.
+0-
+0,
+0+
+0*
+0)
+0(
+0'
+0j
+0$
+#11000
+b111 &
+b11111111111111111111111111110000 !
+b11111111111111111111111111110001 "
+b101 #
+1i
+0d
+1b
+1a
+1`
+1_
+1^
+1]
+1\
+1[
+1Z
+1Y
+1X
+1W
+1V
+1U
+1T
+1S
+1R
+1Q
+1P
+1O
+1N
+1M
+1L
+1K
+1J
+1I
+1H
+1G
+0E
+0C
+1B
+1A
+1@
+1?
+1>
+1=
+1<
+1;
+1:
+19
+18
+17
+16
+15
+14
+13
+12
+11
+10
+1/
+1.
+1-
+1,
+1+
+1*
+1)
+1(
+1'
+#12000
+b1 %
+b1000 &
+#13000
+b1001 &
+b1010 !
+b101 "
+1d
+0b
+0a
+0`
+0_
+0^
+0]
+0\
+0[
+0Z
+0Y
+0X
+0W
+0V
+0U
+0T
+0S
+0R
+0Q
+0P
+0O
+0N
+0M
+0L
+0K
+0J
+0I
+0H
+0G
+1E
+1C
+0B
+0A
+0@
+0?
+0>
+0=
+0<
+0;
+0:
+09
+08
+07
+06
+05
+04
+03
+02
+01
+00
+0/
+0.
+0-
+0,
+0+
+0*
+0)
+0(
+0'
+1j
+1$
+#14000
+b1010 &
+b11111111111111111111111111111111 !
+b1 "
+b110 #
+0i
+1h
+0d
+1F
+1D
+1B
+1A
+1@
+1?
+1>
+1=
+1<
+1;
+1:
+19
+18
+17
+16
+15
+14
+13
+12
+11
+10
+1/
+1.
+1-
+1,
+1+
+1*
+1)
+1(
+1'
+0j
+0$
+#15000
+b1011 &
+b10 !
+b11 "
+1e
+0F
+0D
+0C
+0B
+0A
+0@
+0?
+0>
+0=
+0<
+0;
+0:
+09
+08
+07
+06
+05
+04
+03
+02
+01
+00
+0/
+0.
+0-
+0,
+0+
+0*
+0)
+0(
+0'
+1j
+1$
+#16000
+b1100 &
+b11111111111111111111111111111111 !
+b1 "
+b111 #
+1i
+0e
+1F
+1D
+1C
+1B
+1A
+1@
+1?
+1>
+1=
+1<
+1;
+1:
+19
+18
+17
+16
+15
+14
+13
+12
+11
+10
+1/
+1.
+1-
+1,
+1+
+1*
+1)
+1(
+1'
+0j
+1j
+#17000
+b1101 &
+b1 !
+b10 "
+0f
+1e
+0E
+0D
+0C
+0B
+0A
+0@
+0?
+0>
+0=
+0<
+0;
+0:
+09
+08
+07
+06
+05
+04
+03
+02
+01
+00
+0/
+0.
+0-
+0,
+0+
+0*
+0)
+0(
+0'
+0j
+0$
+#18000
+b1110 &
+b0 !
+b0 "
+b0 #
+0i
+0h
+0g
+0e
+0F
+1j
+1$
+#19000
+b1111 &
+b10000000000000000000000000000000 !
+b1111111111111111111111111111111 "
+b100 #
+1g
+1f
+1e
+1d
+1c
+1b
+1a
+1`
+1_
+1^
+1]
+1\
+1[
+1Z
+1Y
+1X
+1W
+1V
+1U
+1T
+1S
+1R
+1Q
+1P
+1O
+1N
+1M
+1L
+1K
+1J
+1I
+1H
+1'
+0j
+1j
+#20000
+b10000 &
+b1 !
+b1 "
+b10 #
+1h
+0g
+0e
+0d
+0c
+0b
+0a
+0`
+0_
+0^
+0]
+0\
+0[
+0Z
+0Y
+0X
+0W
+0V
+0U
+0T
+0S
+0R
+0Q
+0P
+0O
+0N
+0M
+0L
+0K
+0J
+0I
+0H
+1F
+0'
+0j
+0$

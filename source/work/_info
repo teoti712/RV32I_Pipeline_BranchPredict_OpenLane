@@ -3,740 +3,710 @@ K4
 z2
 13
 cModel Technology
-dC:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/work
+Z0 dC:/questasim64_10.2c/examples
 !s112 0.1
 !i10d 8192
 !i10e 25
 !i10f 100
+T_opt
+V4kAj1E`E`AcQN=?dih=IG0
+04 16 4 work execute_stage_tb fast 0
+=1-7c8ae175c547-691afa62-e0-3ff8
+o-quiet -auto_acc_if_foreign -work work
+n@_opt
+OL;O;10.2c;57
+Z1 dC:/questasim64_10.2c/examples
+!s110 1763375714
 vadd
-Z0 DXx6 sv_std 3 std 0 22 `a<MJET1=lN@jzbA7kHm;1
-Z1 !s110 1761294987
-I<hz_VPIlOSo80>d8^I4WA0
-Z2 V`JN@9S9cnhjKRR_L]QIcM3
-S1
-Z3 dC:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source
-w1761130952
-8C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/execute/add.sv
-FC:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/execute/add.sv
-L0 1
-Z4 OL;L;10.2c;57
+Z2 DXx6 sv_std 3 std 0 22 `a<MJET1=lN@jzbA7kHm;1
+Z3 V`JN@9S9cnhjKRR_L]QIcM3
 r1
 31
-Z5 o-work work -sv -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
-!s100 Tz=R620:K[8TzzfS5T<dj1
-!s105 add_sv_unit
-!s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/execute/add.sv|
-!s108 1761294987.448000
-!s107 C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/execute/add.sv|
-!i10b 1
+I6L52ZN=;=0=bmAlInX3602
+Z4 !s105 execute_stage_tb_sv_unit
+S1
+Z5 dC:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source
+Z6 w1763378355
+Z7 8C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/pipeline/execute_stage_tb.sv
+Z8 FC:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/pipeline/execute_stage_tb.sv
+L0 93
+Z9 OL;L;10.2c;57
+Z10 !s108 1763482436.210000
+Z11 !s107 C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/pipeline/execute_stage_tb.sv|
+Z12 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/pipeline/execute_stage_tb.sv|
+Z13 o-work work -sv -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
 !s85 0
+!s100 []Q<1RAT^XGLSkSjXRI8m0
+!i10b 1
 !i111 0
 valu
-Z6 DXx6 sv_std 3 std 0 22 `a<MJET1=lN@jzbA7kHm;1
-R1
-IKVij;CVKn^hE>?k>iZIO53
 R2
-S1
 R3
-w1761130815
-8C:\Users\VINH HA\Documents\Documents\tailieu\TAILIEUMONHOC\nop_git\RV32I_Pipeline_BranchPredict_OpenLane\source\execute\alu.sv
-FC:\Users\VINH HA\Documents\Documents\tailieu\TAILIEUMONHOC\nop_git\RV32I_Pipeline_BranchPredict_OpenLane\source\execute\alu.sv
-L0 2
-R4
 r1
 31
+IJe;fE1ePTRlXj6OaRlf_@0
+R4
+S1
 R5
-!s100 0c:MoMCLXiooTUe@C[:Yl0
-!s105 alu_sv_unit
-!s90 -reportprogress|300|-work|work|-vopt|-sv|C:\Users\VINH HA\Documents\Documents\tailieu\TAILIEUMONHOC\nop_git\RV32I_Pipeline_BranchPredict_OpenLane\source\execute\alu.sv|
-!s108 1761294987.542000
-!s107 C:\Users\VINH HA\Documents\Documents\tailieu\TAILIEUMONHOC\nop_git\RV32I_Pipeline_BranchPredict_OpenLane\source\execute\alu.sv|
-!i10b 1
+R6
+R7
+R8
+L0 103
+R9
+R10
+R11
+R12
+R13
 !s85 0
+!s100 `gog^DUn]fYYieHY9G5Q22
+!i10b 1
+!i111 0
+vbranch
+R2
+R3
+r1
+31
+Io158^CLz^Qgd=LZeNPfEO1
+R4
+S1
+R5
+R6
+R7
+R8
+L0 130
+R9
+R10
+R11
+R12
+R13
+!s85 0
+!s100 TLBKJ]GYLkk=]3lEB[GGd2
+!i10b 1
 !i111 0
 vcontrol_unit
-R6
-Z7 !s110 1761294988
-I>;Y3A`:aK:;T81@5C_C@X0
 R2
-S1
 R3
-w1761284614
+r1
+31
+IRDmZH6_KTn?K<Az5G2hPn2
+S1
+R5
+w1763468543
 8C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/decode/control_unit.sv
 FC:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/decode/control_unit.sv
 L0 1
-R4
-r1
-31
-R5
-!s100 UGOTQ8J2;0bg0UQI`DKR81
+R9
+R13
+!s85 0
+!s100 AoZ45jcHBQnPHOLijj5V01
 !s105 control_unit_sv_unit
 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/decode/control_unit.sv|
-!s108 1761294988.174000
+!s108 1763482435.388000
 !s107 C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/decode/control_unit.sv|
 !i10b 1
-!s85 0
 !i111 0
-vdecode
-R6
-R7
-Il;_2Ydi8]C;a6nOG0_9Mg1
+vdata_hazard
 R2
-S1
 R3
-Z8 w1761116421
-8C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/decode/decode.sv
-FC:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/decode/decode.sv
+r1
+!s85 0
+31
+I7k=Ci3Sm;m8mo?a[DAeQX0
+S1
+R5
+w1763481014
+8C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/data_hazard.sv
+FC:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/data_hazard.sv
 L0 1
-R4
+R9
+R13
+!s100 ]RAiJ3fC7Z5o^MXUNfcW`2
+!s105 data_hazard_sv_unit
+!s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/data_hazard.sv|
+!s108 1763482436.700000
+!s107 C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/data_hazard.sv|
+!i10b 1
+!i111 0
+vdecode_stage
+R2
+R3
 r1
 31
+IBj6E_UK2oncGY9Q7bJF1n2
+S1
 R5
-!s100 Vm1k<hScgjQE<No6^l7Ja2
-!s105 decode_sv_unit
-!s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/decode/decode.sv|
-!s108 1761294988.278000
-!s107 C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/decode/decode.sv|
-!i10b 1
+w1763468750
+8C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/pipeline/decode_stage.sv
+FC:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/pipeline/decode_stage.sv
+L0 1
+R9
+R13
 !s85 0
+!s100 fd3`PkD>NSah1G@6aU2oS1
+!s105 decode_stage_sv_unit
+!s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/pipeline/decode_stage.sv|
+!s108 1763482435.655000
+!s107 C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/pipeline/decode_stage.sv|
+!i10b 1
 !i111 0
 vdmem
-R6
 R2
+R3
 r1
 31
 IL`eSXT?TDaXW8291;5i^L3
 S1
-R3
+R5
 w1761289197
 8C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/memory/lsu/dmem.sv
 FC:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/memory/lsu/dmem.sv
 L0 1
-R4
-R5
+R9
+R13
 !s85 0
 !s100 ID3:kefi<0=8@7VR`F9<o1
 !s105 dmem_sv_unit
 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/memory/lsu/dmem.sv|
-!s108 1761294988.889000
+!s108 1763482437.428000
 !s107 C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/memory/lsu/dmem.sv|
 !i10b 1
 !i111 0
-vexcute
-R6
-Z9 !s110 1761237813
-IhKM?Af941S?IgT7aCCUNU2
+vexecute_stage
 R2
-S1
 R3
-w1761227601
-8C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/execute/nhap.sv
-FC:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/execute/nhap.sv
-L0 1
-R4
 r1
 31
+I3RCY4[@l<>LY8d4SWacoF1
+S1
 R5
-!s100 1n4A`V?YbRRIS790?d9zV2
-!s105 nhap_sv_unit
-!s108 1761237813.597000
-!s107 C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/execute/nhap.sv|
-!s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/execute/nhap.sv|
-!i10b 1
+w1763372612
+8C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/pipeline/execute_stage.sv
+FC:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/pipeline/execute_stage.sv
+L0 1
+R9
+R13
 !s85 0
+!s100 U:2W3Nog4kJXKAE7j>JTG1
+!s105 execute_stage_sv_unit
+!s108 1763482436.427000
+!s107 C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/pipeline/execute_stage.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/pipeline/execute_stage.sv|
+!i10b 1
 !i111 0
-vexecute
-R6
-R1
-IU1^T3aDY=_;0Sg8g]VaRT3
+vexecute_stage_tb
 R2
-S1
+Z14 !s110 1763482436
+IM1BmSFHz2@Odz6gY[25A`2
 R3
-w1761229545
-8C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/execute/execute.sv
-FC:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/execute/execute.sv
-L0 1
 R4
+S1
+R5
+R6
+R7
+R8
+L0 154
+R9
 r1
 31
-R5
-!s100 b[4FPT?G_fYB4i;3UT<nN3
-!s105 execute_sv_unit
-!s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/execute/execute.sv|
-!s108 1761294987.684000
-!s107 C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/execute/execute.sv|
+R10
+R11
+R12
+R13
+!s100 aiTCnTmgE;FTQkgPL4anc1
 !i10b 1
 !s85 0
 !i111 0
 vEXMEM_register
-R6
 R2
+R3
 r1
 31
-Ib0BAcX8EQ6=Wo=TjjealR0
+IAQe;1nb`5n:kVH@h]jj_;3
 S1
-R3
-w1761285176
-8C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/EXMEM_register.sv
-FC:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/EXMEM_register.sv
-L0 1
-R4
 R5
+w1761285176
+8C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/register_pipeline/EXMEM_register.sv
+FC:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/register_pipeline/EXMEM_register.sv
+L0 1
+R9
+R13
 n@e@x@m@e@m_register
 !s85 0
 !s100 fARTeSB6`B4^3I0JU_<:D1
 !s105 EXMEM_register_sv_unit
-!s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/EXMEM_register.sv|
-!s108 1761294988.517000
-!s107 C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/EXMEM_register.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/register_pipeline/EXMEM_register.sv|
+!s108 1763482437.067000
+!s107 C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/register_pipeline/EXMEM_register.sv|
 !i10b 1
 !i111 0
-vfetch
-R6
-R1
-IWmE;6UbMFIX3_9kg2@EN81
+vfetch_stage
 R2
-S1
 R3
-R8
-8C:\Users\VINH HA\Documents\Documents\tailieu\TAILIEUMONHOC\nop_git\RV32I_Pipeline_BranchPredict_OpenLane\source\fetch\fetch.sv
-FC:\Users\VINH HA\Documents\Documents\tailieu\TAILIEUMONHOC\nop_git\RV32I_Pipeline_BranchPredict_OpenLane\source\fetch\fetch.sv
-L0 1
-R4
 r1
 31
+I3LTI]XZ<XIC>BdmD@Yj;12
+S1
 R5
-!s100 Am]7[V97?4XEz;^d0oMVN2
-!s105 fetch_sv_unit
-!s90 -reportprogress|300|-work|work|-vopt|-sv|C:\Users\VINH HA\Documents\Documents\tailieu\TAILIEUMONHOC\nop_git\RV32I_Pipeline_BranchPredict_OpenLane\source\fetch\fetch.sv|
-!s108 1761294987.072000
-!s107 C:\Users\VINH HA\Documents\Documents\tailieu\TAILIEUMONHOC\nop_git\RV32I_Pipeline_BranchPredict_OpenLane\source\fetch\fetch.sv|
-!i10b 1
+w1763365668
+8C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/pipeline/fetch_stage.sv
+FC:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/pipeline/fetch_stage.sv
+L0 1
+R9
+R13
 !s85 0
+!s100 77WQ6;4S<3E=_<h85Qd=?2
+!s105 fetch_stage_sv_unit
+!s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/pipeline/fetch_stage.sv|
+!s108 1763482435.214000
+!s107 C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/pipeline/fetch_stage.sv|
+!i10b 1
 !i111 0
 vIDEX_register
-R6
-Z10 !s110 1761294986
-I^X@D;D0^kYCQ;Pe5^bn>R2
 R2
-S1
 R3
-w1761131765
-8C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/IDEX_register.sv
-FC:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/IDEX_register.sv
-L0 1
-R4
 r1
 31
+IDNUORDU]l:Cj8QITK6nKF3
+S1
 R5
+w1761635066
+8C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/register_pipeline/IDEX_register.sv
+FC:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/register_pipeline/IDEX_register.sv
+L0 1
+R9
+R13
 n@i@d@e@x_register
-!s100 DZR<LoC_WlE9FPdlB][bf1
-!s105 IDEX_register_sv_unit
-!s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/IDEX_register.sv|
-!s108 1761294986.786000
-!s107 C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/IDEX_register.sv|
-!i10b 1
 !s85 0
+!s100 >6ki64BkUooIfNdkKzX;S0
+!s105 IDEX_register_sv_unit
+!s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/register_pipeline/IDEX_register.sv|
+!s108 1763482437.158000
+!s107 C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/register_pipeline/IDEX_register.sv|
+!i10b 1
 !i111 0
 vIFID_register
-R6
-R10
-I@?_]DK<S:NFbd@gi;5^5F3
 R2
-S1
 R3
-R8
-8C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/IFID_register.sv
-FC:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/IFID_register.sv
-L0 1
-R4
 r1
 31
+I;6SYI6UL6SVJjJzjL1SNU0
+S1
 R5
+Z15 w1761116421
+8C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/register_pipeline/IFID_register.sv
+FC:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/register_pipeline/IFID_register.sv
+L0 1
+R9
+R13
 n@i@f@i@d_register
+!s85 0
 !s100 ]:IBbfk]cC8lS@;8QI]Ih0
 !s105 IFID_register_sv_unit
-!s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/IFID_register.sv|
-!s108 1761294986.889000
-!s107 C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/IFID_register.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/register_pipeline/IFID_register.sv|
+!s108 1763482437.247000
+!s107 C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/register_pipeline/IFID_register.sv|
 !i10b 1
-!s85 0
 !i111 0
 vimm_gen
-R6
-R7
-Ie^98ceXzGQEGFnL2`[L8j2
 R2
-S1
 R3
-R8
+r1
+31
+IQ_L;O]`NEF<1=leNhT@<^3
+S1
+R5
+w1763468620
 8C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/decode/imm_gen.sv
 FC:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/decode/imm_gen.sv
 L0 1
-R4
-r1
-31
-R5
-!s100 Z2Dg5NNSW7CNGWbF5M@IN0
+R9
+R13
+!s85 0
+!s100 DWWY0A3EMO0?_XT7`f:kD3
 !s105 imm_gen_sv_unit
 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/decode/imm_gen.sv|
-!s108 1761294988.394000
+!s108 1763482435.476000
 !s107 C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/decode/imm_gen.sv|
 !i10b 1
-!s85 0
 !i111 0
 vinput_buffer
-R6
 R2
+R3
 r1
-!s85 0
 31
 IDNV]k[2mc=jd=LMH5fihn0
 S1
-R3
+R5
 w1761279706
 8C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/memory/lsu/input_buffer.sv
 FC:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/memory/lsu/input_buffer.sv
 L0 1
-R4
-R5
+R9
+R13
+!s85 0
 !s100 gAO5kOQJ6o:W0:FhfkzAj1
 !s105 input_buffer_sv_unit
 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/memory/lsu/input_buffer.sv|
-!s108 1761294989.004000
+!s108 1763482437.536000
 !s107 C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/memory/lsu/input_buffer.sv|
 !i10b 1
 !i111 0
 vinst_mem
-R6
-R1
-IGMNH9VPdb:m17BbNfVSc<2
 R2
-S1
 R3
-R8
+r1
+31
+IGMNH9VPdb:m17BbNfVSc<2
+S1
+R5
+R15
 8C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/fetch/instr_mem.sv
 FC:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/fetch/instr_mem.sv
 L0 1
-R4
-r1
-31
-R5
+R9
+R13
+!s85 0
 !s100 l^9;j<BW6LfSDkOU^I<B^0
 !s105 instr_mem_sv_unit
 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/fetch/instr_mem.sv|
-!s108 1761294987.163000
+!s108 1763482434.962000
 !s107 C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/fetch/instr_mem.sv|
 !i10b 1
-!s85 0
 !i111 0
 vlsu
-R6
 R2
+R3
 r1
 31
-IDAC<ne9oB3IM5B:_^oi771
+I0h^Nj4b:TjcHlk;bPKM6Z2
 S1
-R3
-w1761294972
+R5
+w1761295128
 8C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/memory/lsu/lsu.sv
 FC:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/memory/lsu/lsu.sv
 L0 1
-R4
-R5
+R9
+R13
 !s85 0
+!s100 e5L7Q3QnI_SJGI29dl_g60
 !s105 lsu_sv_unit
 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/memory/lsu/lsu.sv|
-!s100 1?SMn4gf05j2AARM>Pd=[3
-!s108 1761294989.118000
+!i10b 1
+!s108 1763482437.624000
 !s107 C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/memory/lsu/lsu.sv|
+!i111 0
+vMEMWB_pipepline
+R2
+R3
+r1
+31
+Iah1gZEoSgje;>X1;WUI]?3
+S1
+R5
+w1761630304
+8C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/register_pipeline/MEMWB_pipeline.sv
+FC:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/register_pipeline/MEMWB_pipeline.sv
+L0 1
+R9
+R13
+n@m@e@m@w@b_pipepline
+!s85 0
+!s100 233=zQLa:F4G8X5e;D57H1
+!s105 MEMWB_pipeline_sv_unit
+!s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/register_pipeline/MEMWB_pipeline.sv|
+!s108 1763482436.974000
+!s107 C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/register_pipeline/MEMWB_pipeline.sv|
 !i10b 1
 !i111 0
 vmux_alu_src
-R6
-R1
-I8oiGdP;T]5X1OBJHVcn`^3
 R2
-S1
 R3
-w1761131402
-8C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/execute/mux_alu_src.sv
-FC:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/execute/mux_alu_src.sv
-L0 1
-R4
 r1
 31
+IbDNz`d2ol2B32^]3K3BHG3
+R4
+S1
 R5
-!s100 X3iWfH8[[VaZ?DR0<EW@32
-!s105 mux_alu_src_sv_unit
-!s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/execute/mux_alu_src.sv|
-!s108 1761294987.773000
-!s107 C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/execute/mux_alu_src.sv|
-!i10b 1
+R6
+R7
+R8
+L0 85
+R9
+R10
+R11
+R12
+R13
 !s85 0
+!s100 7lE9alzR_jmOjdIFUee[<1
+!i10b 1
 !i111 0
 vmux_forward
-R6
-R1
-Iz`Y__6SYkiOVZBidfLjC83
 R2
-S1
 R3
+r1
+31
+Iz`Y__6SYkiOVZBidfLjC83
+S1
+R5
 w1761131339
 8C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/execute/mux_forward.sv
 FC:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/execute/mux_forward.sv
 L0 1
-R4
-r1
-31
-R5
+R9
+R13
+!s85 0
 !s100 O5FDIGRBA<LjH7]B[BQkd1
 !s105 mux_forward_sv_unit
-!s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/execute/mux_forward.sv|
-!s108 1761294987.868000
+!s108 1763482436.334000
 !s107 C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/execute/mux_forward.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/execute/mux_forward.sv|
 !i10b 1
-!s85 0
 !i111 0
 voutput_buffer
-R6
 R2
+R3
 r1
 31
 I8?lG_48?azGM9a5_AB2c;2
 S1
-R3
+R5
 w1761283690
 8C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/memory/lsu/output_buffer.sv
 FC:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/memory/lsu/output_buffer.sv
 L0 1
-R4
-R5
+R9
+R13
 !s85 0
 !s100 m`MMzD@B<gWG]OF4NCkIF0
 !s105 output_buffer_sv_unit
 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/memory/lsu/output_buffer.sv|
-!s108 1761294988.767000
+!s108 1763482437.337000
 !s107 C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/memory/lsu/output_buffer.sv|
 !i10b 1
 !i111 0
 vpc
-R6
-R1
-IeIZI1IccZ?JgN^KQ`C]Sg3
 R2
-S1
 R3
-R8
+r1
+31
+IeIZI1IccZ?JgN^KQ`C]Sg3
+S1
+R5
+R15
 8C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/fetch/pc.sv
 FC:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/fetch/pc.sv
 L0 1
-R4
-r1
-31
-R5
+R9
+R13
+!s85 0
 !s100 3c3eFG2iSV6OVPM[Gl_880
 !s105 pc_sv_unit
 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/fetch/pc.sv|
-!s108 1761294987.261000
+!s108 1763482435.050000
 !s107 C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/fetch/pc.sv|
 !i10b 1
-!s85 0
 !i111 0
 vpc_plus4F
-R6
-I?YXTiz3S5aWaG[UBEfc<T0
 R2
-S1
 R3
-R8
+r1
+31
+I?YXTiz3S5aWaG[UBEfc<T0
+S1
+R5
+R15
 8C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/fetch/pc_plus4F.sv
 FC:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/fetch/pc_plus4F.sv
 L0 1
-R4
-r1
-31
-R5
+R9
+R13
 npc_plus4@f
-R1
+!s85 0
 !s100 mm_^IjL2JdiS@PI_;5kFS0
 !s105 pc_plus4F_sv_unit
 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/fetch/pc_plus4F.sv|
-!s108 1761294986.980000
+!s108 1763482434.884000
 !s107 C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/fetch/pc_plus4F.sv|
 !i10b 1
-!s85 0
 !i111 0
 vpipeline
-R6
 R2
+R3
 r1
 31
-Ib2a0P8lg:oIb5H8T]WSBO0
+Ia6aAdnIZ^]H4TokWSUegB2
 S1
-R3
-w1761238625
-8C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/pipeline_phase2.sv
-FC:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/pipeline_phase2.sv
-L0 1
-R4
-o-work work -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
-!s105 pipeline_phase2_sv_unit
-!s100 Ba@h0ikYJn_jV?R;AbUiJ3
-!s108 1761238655.672000
-!s107 C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/pipeline_phase2.sv|
-!s90 -reportprogress|300|-work|work|C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/pipeline_phase2.sv|
-!s85 0
-!i10b 1
-!i111 0
-vpipeline_phs3
-R6
-R2
-r1
-31
-Ii?nLK4VRCH2RaV]o6H8[P0
-S1
-R3
-w1761293983
-8C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/pipeline_phs3.sv
-FC:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/pipeline_phs3.sv
-L0 1
-R4
 R5
+w1763480975
+8C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/pipeline_main.sv
+FC:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/pipeline_main.sv
+L0 1
+R9
+R13
 !s85 0
-!s100 AhIhEO7O8jz?6W@C7e2fc2
-!s105 pipeline_phs3_sv_unit
-!s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/pipeline_phs3.sv|
-!s108 1761294988.634000
-!s107 C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/pipeline_phs3.sv|
+!s100 F1ID<9CzZPz>DM7VSGG411
+!s105 pipeline_main_sv_unit
+!s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/pipeline_main.sv|
+!s108 1763482436.792000
+!s107 C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/pipeline_main.sv|
 !i10b 1
 !i111 0
 vreg_file
-R6
-R7
-I9J]RM4bfRzeI3JmYo1Lbb1
 R2
-S1
 R3
-R8
+r1
+31
+I9J]RM4bfRzeI3JmYo1Lbb1
+S1
+R5
+R15
 8C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/decode/reg_file.sv
 FC:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/decode/reg_file.sv
 L0 1
-R4
-r1
-31
-R5
+R9
+R13
+!s85 0
 !s100 ddh5^Y;h<CU:UEXc`B2^h2
 !s105 reg_file_sv_unit
 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/decode/reg_file.sv|
-!s108 1761294988.075000
+!s108 1763482435.568000
 !s107 C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/decode/reg_file.sv|
 !i10b 1
-!s85 0
 !i111 0
 vslt
-R6
-In0??oXXFc>0zM^X6kP^la2
 R2
-S1
+R14
+In0??oXXFc>0zM^X6kP^la2
 R3
+S1
+R5
 w1761130759
 8C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/execute/slt.sv
 FC:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/execute/slt.sv
 L0 1
-R4
+R9
 r1
 31
-R5
-R7
+R13
 !s100 A9QZoFCB[kUl9:0^ZAoWj1
 !s105 slt_sv_unit
 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/execute/slt.sv|
-!s108 1761294987.975000
+!s108 1763482436.610000
 !s107 C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/execute/slt.sv|
 !i10b 1
 !s85 0
 !i111 0
 vsltu
-R6
 R2
-r1
-31
+R14
 IW6cA:XUAI1PTj^8b_e1W;2
-S1
 R3
+S1
+R5
 w1761130774
 8C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/execute/sltu.sv
 FC:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/execute/sltu.sv
 L0 1
-R4
-R5
+R9
+r1
+31
+R13
 !s100 1G;M^9d97A0=dMaF:OQJ82
 !s105 sltu_sv_unit
 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/execute/sltu.sv|
-!s108 1761237868.719000
+!s108 1763482436.518000
 !s107 C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/execute/sltu.sv|
-!s85 0
 !i10b 1
+!s85 0
 !i111 0
-vtb_alu
-R6
+vtb_branch
+R2
+Z16 !s110 1763482435
+I;DO8C2Uh@0>O6^cYN`0fM2
+R3
+S1
+R5
+w1763369102
+8C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/execute/tb_branch.sv
+FC:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/execute/tb_branch.sv
+L0 3
 R9
-IW8^oe;m_S^c7NH>36U[Ga1
+r1
+31
+R13
+!s100 6choe9f=KM_M_`B9A4RB=1
+!s105 tb_branch_sv_unit
+!s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/execute/tb_branch.sv|
+!s108 1763482435.928000
+!s107 C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/execute/tb_branch.sv|
+!i10b 1
+!s85 0
+!i111 0
+vtb_decode_stage
 R2
-S1
+R16
+I5ZOQUeCX=I73OCZ5VTW=h1
 R3
-w1761226088
-8C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/execute/tb_alu.sv
-FC:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/execute/tb_alu.sv
+S1
+R5
+w1763367601
+8C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/pipeline/decode_stage_tb.sv
+FC:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/pipeline/decode_stage_tb.sv
 L0 3
-R4
+R9
 r1
 31
-R5
-!s100 ;D9XRWgE3G;AI2d=gM6i30
-!s105 tb_alu_sv_unit
-!s108 1761237813.860000
-!s107 C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/execute/tb_alu.sv|
-!s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/execute/tb_alu.sv|
+R13
+!s100 z:?XNUzAeF7]i=_X`7_CA3
+!s105 decode_stage_tb_sv_unit
+!s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/pipeline/decode_stage_tb.sv|
+!s108 1763482435.745000
+!s107 C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/pipeline/decode_stage_tb.sv|
 !i10b 1
 !s85 0
 !i111 0
-vtb_execute
-R6
-R1
-I@iQ2Q1aYPhMAof<9_zIJX0
+vtb_fetch_stage
 R2
-S1
+R16
+I^gn@Zij<HdLTX3Ai0d01:3
 R3
-w1761228572
-8C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/execute/tb_execute.sv
-FC:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/execute/tb_execute.sv
-L0 3
-R4
-r1
-31
+S1
 R5
-!s100 XLX?;HP6lzkia9U5T;L6Q2
-!s105 tb_execute_sv_unit
-!s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/execute/tb_execute.sv|
-!s108 1761294987.353000
-!s107 C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/execute/tb_execute.sv|
-!i10b 1
-!s85 0
-!i111 0
-vtb_EXMEM_register_sync
-R6
-!s110 1761294989
-IKzXoBdc4`;EcoRnAdo7Yj2
-R2
-S1
-R3
-w1761293298
-8C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/tb_EXMEM.sv
-FC:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/tb_EXMEM.sv
+w1763366526
+8C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/pipeline/fetch_stage_tb.sv
+FC:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/pipeline/fetch_stage_tb.sv
 L0 2
-R4
+R9
 r1
 31
-R5
-ntb_@e@x@m@e@m_register_sync
-!s100 MEF?K6i`9n5f?b@`D=O@90
-!s105 tb_EXMEM_sv_unit
-!s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/tb_EXMEM.sv|
-!i10b 1
-!s85 0
-!s108 1761294989.358000
-!s107 C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/tb_EXMEM.sv|
-!i111 0
-vtb_lsu_unaligned
-R6
-ICCg;D:fcU]ogaF]dL=TB52
-R2
-Z11 !s105 tb_pipeline_phs3_sv_unit
-S1
-R3
-w1761287416
-Z12 8C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/tb_pipeline_phs3.sv
-Z13 FC:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/tb_pipeline_phs3.sv
-L0 2
-R4
-r1
-31
-Z14 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/tb_pipeline_phs3.sv|
-R5
-Z15 !s107 C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/tb_pipeline_phs3.sv|
-!s110 1761287432
-!s100 76o3Uz?YAd>Hoacg<1F4g1
-!s108 1761287432.126000
+R13
+!s100 eLHbUHGo:Lel:XSI_<WBT1
+!s105 fetch_stage_tb_sv_unit
+!s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/pipeline/fetch_stage_tb.sv|
+!s108 1763482435.300000
+!s107 C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/pipeline/fetch_stage_tb.sv|
 !i10b 1
 !s85 0
 !i111 0
 vtb_pipeline
-R6
-I7kD:cbjz5]g0Zl4`kidFa1
 R2
-S1
 R3
-R8
-8C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/tb.sv
-FC:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/tb.sv
+r1
+31
+IUKz8L1Sed<Fd1geNYIjCb1
+S1
+R5
+w1763482418
+8C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/pipeline_main_tb.sv
+FC:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/pipeline_main_tb.sv
 L0 3
-R4
-r1
-31
-R5
-!s110 1761237865
-!s100 ^2nlOVcGN9jXO]Rf5h0zK1
-!s105 tb_sv_unit
-!s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/tb.sv|
-!s108 1761237865.423000
-!s107 C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/tb.sv|
-!i10b 1
-!s85 0
-!i111 0
-vtb_pipeline_jump_branch
-R6
-I1a=PR1h[G=>PC`Z>C20fQ3
-R2
-S1
-R3
-w1761239055
-8C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/tb_pipeline_phs2.sv
-FC:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/tb_pipeline_phs2.sv
-L0 4
-R4
-r1
-31
-R5
-R10
-!s100 LHUo]a?WhhoAjTK;OkenL0
-!s105 tb_pipeline_phs2_sv_unit
-!s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/tb_pipeline_phs2.sv|
-!s108 1761294986.705000
-!s107 C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/tb_pipeline_phs2.sv|
-!i10b 1
-!s85 0
-!i111 0
-vtb_pipeline_phs3_store_load_full
-R6
-R2
-r1
-31
-IhSnfV:S=8<ak@AQO0Fc=H2
-R11
-S1
-R3
-w1761294413
-R12
+R9
 R13
-L0 2
-R4
-R14
-R5
-R15
 !s85 0
-!s100 db3`[HGT7DJnFWFHL^@cY1
-!s108 1761294989.235000
+!s105 pipeline_main_tb_sv_unit
+!s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/pipeline_main_tb.sv|
+!s100 1zLh43Tz4DL7nNcb:lE0c2
+!s108 1763482436.884000
+!s107 C:/Users/VINH HA/Documents/Documents/tailieu/TAILIEUMONHOC/nop_git/RV32I_Pipeline_BranchPredict_OpenLane/source/pipeline_main_tb.sv|
 !i10b 1
 !i111 0
