@@ -1,0 +1,33 @@
+QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+Start time: 23:11:47 on Nov 21,2025
+vlog -sv -f compile.f 
+-- Compiling module inst_mem
+-- Compiling module pc
+-- Compiling module pc_plus4F
+-- Compiling module control_unit
+-- Compiling module imm_gen
+-- Compiling module reg_file
+-- Compiling module add
+-- Compiling module alu
+-- Compiling module branch
+-- Compiling module mux_alu_src
+-- Compiling module mux_forward
+-- Compiling module dmem
+-- Compiling module input_buffer
+-- Compiling module output_buffer
+-- Compiling module lsu
+-- Compiling module fetch_stage
+-- Compiling module decode_stage
+-- Compiling module execute_stage
+-- Compiling module IFID_register
+-- Compiling module IDEX_register
+-- Compiling module EXMEM_register
+-- Compiling module MEMWB_pipepline
+-- Compiling module data_hazard
+-- Compiling module pipeline
+-- Compiling module testbench
+
+Top level modules:
+	testbench
+End time: 23:11:48 on Nov 21,2025, Elapsed time: 0:00:01
+Errors: 0, Warnings: 0
