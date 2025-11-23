@@ -1,5 +1,5 @@
-# vsim -debugDB -l default.log -voptargs="+acc" -assertdebug -c testbench -do "log -r /*; run -all; quit" 
-# Start time: 13:52:45 on Nov 23,2025
+# vsim -sv_seed 1 -debugDB -l jtype.log -voptargs="+acc" -assertdebug -c testbench -do "log -r /*;run -all;quit" "+jtype" "+HEX_FILE=/home/vinhha/source_for_linux/RV32I_Pipeline_BranchPredict_OpenLane/hex/instmem_jtype.hex" 
+# Start time: 14:34:21 on Nov 23,2025
 # ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # ** Note: (vsim-8611) Generating debug db.
 # //  Questa Sim-64
@@ -44,10 +44,20 @@
 # Loading work.data_hazard(fast)
 # ** Note: (vsim-8900) Creating design debug database vsim.dbg.
 # log -r /*
-#  run -all
+# run -all
+# Loading Instruction Memory from: /home/vinhha/source_for_linux/RV32I_Pipeline_BranchPredict_OpenLane/hex/instmem_jtype.hex
 # === START REAL SIMULATION ===
+# [JAL-Link] Pass (Saved PC+4 = 8)
+# [JAL-Jump] Pass (Skipped FAIL instr)
+# [JALR-Link] Pass (Saved PC+4 = 0x14)
+# [JALR-Link] Pass (Saved PC+4 = 0x14)
+# [JALR-Link] Pass (Saved PC+4 = 0x14)
+# [JALR-Link] Pass (Saved PC+4 = 0x14)
+# [JALR-Link] Pass (Saved PC+4 = 0x14)
+# [JALR-Link] Pass (Saved PC+4 = 0x14)
+# [JALR-Link] Pass (Saved PC+4 = 0x14)
 # === SIMULATION FINISHED ===
 # ** Note: $finish    : ../tb/testbench.sv(26)
 #    Time: 315 ns  Iteration: 1  Instance: /testbench
-# End time: 13:52:50 on Nov 23,2025, Elapsed time: 0:00:05
+# End time: 14:34:26 on Nov 23,2025, Elapsed time: 0:00:05
 # Errors: 0, Warnings: 0

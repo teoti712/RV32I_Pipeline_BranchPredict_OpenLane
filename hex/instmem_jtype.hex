@@ -1,0 +1,35 @@
+// --- SETUP ---
+02400513  // 1. ADDI x10, x0, 36   -> x10 = 0x24 (Chuẩn bị đích đến cho JALR)
+
+// --- TEST 1: JAL (Jump and Link) ---
+// PC = 0x04. JAL x1, +8. Target = 0x0C.
+// Link: x1 = 0x04 + 4 = 0x08
+008000EF  // 2. JAL x1, offset=8
+
+// --- TRAP (FAIL ZONE) ---
+// PC = 0x08. Nếu JAL không nhảy, nó sẽ chạy vào đây.
+00000113  // 3. ADDI x2, x0, 0     (FAIL MARKER)
+
+// --- TARGET JAL (PASS ZONE) ---
+// PC = 0x0C.
+00100113  // 4. ADDI x2, x0, 1     (PASS MARKER cho JAL)
+
+// --- TEST 2: JALR (Jump and Link Register) ---
+// PC = 0x10. JALR x11, 0(x10). Target = 0x24.
+// Link: x11 = 0x10 + 4 = 0x14 (20)
+000505E7  // 5. JALR x11, 0(x10)
+
+// --- TRAP (FAIL ZONE) ---
+// PC = 0x14.
+00000193  // 6. ADDI x3, x0, 0     (FAIL MARKER)
+00000013  // 7. NOP
+00000013  // 8. NOP
+
+// --- TARGET JALR (PASS ZONE) ---
+// PC = 0x24 (36)
+00100193  // 9. ADDI x3, x0, 1     (PASS MARKER cho JALR)
+
+// --- END ---
+00000013
+00000013
+

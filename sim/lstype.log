@@ -1,5 +1,5 @@
-# vsim -debugDB -l default.log -voptargs="+acc" -assertdebug -c testbench -do "log -r /*; run -all; quit" 
-# Start time: 13:52:45 on Nov 23,2025
+# vsim -sv_seed 1 -debugDB -l lstype.log -voptargs="+acc" -assertdebug -c testbench -do "log -r /*;run -all;quit" "+lstype" "+HEX_FILE=/home/vinhha/source_for_linux/RV32I_Pipeline_BranchPredict_OpenLane/hex/instmem_lstype.hex" 
+# Start time: 14:29:22 on Nov 23,2025
 # ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # ** Note: (vsim-8611) Generating debug db.
 # //  Questa Sim-64
@@ -44,10 +44,23 @@
 # Loading work.data_hazard(fast)
 # ** Note: (vsim-8900) Creating design debug database vsim.dbg.
 # log -r /*
-#  run -all
+# run -all
+# Loading Instruction Memory from: /home/vinhha/source_for_linux/RV32I_Pipeline_BranchPredict_OpenLane/hex/instmem_lstype.hex
 # === START REAL SIMULATION ===
+# [SETUP] x1 (Base) = 00002000 (Expected: 00002000)
+# [SETUP] x2 (Data) = 55aa3000 (Expected: 55aa33cc)
+# [SETUP] x2 (Data) = 55aa33cc (Expected: 55aa33cc)
+# [LW]    x3 = 55aa33cc (PASS)
+# [LHU]   x4 = 000033cc (PASS)
+# [LH]    x6 = ffffffff (PASS - Signed Ext)
+# [LHU]   x7 = 0000ffff (PASS - Zero Ext)
+# [LB]    x8 = ffffffcc (PASS - Signed Byte)
+# [LBU]   x9 = 000000cc (PASS - Unsigned Byte)
+# [WB] rd= 0 val=00000000
+# [WB] rd= 0 val=00000000
+# [WB] rd= 0 val=00000000
 # === SIMULATION FINISHED ===
 # ** Note: $finish    : ../tb/testbench.sv(26)
 #    Time: 315 ns  Iteration: 1  Instance: /testbench
-# End time: 13:52:50 on Nov 23,2025, Elapsed time: 0:00:05
+# End time: 14:29:26 on Nov 23,2025, Elapsed time: 0:00:04
 # Errors: 0, Warnings: 0

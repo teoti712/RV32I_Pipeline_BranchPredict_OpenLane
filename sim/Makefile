@@ -1,21 +1,16 @@
-#################################################################################################
-#This file created by Huy Nguyen (modified)
-#Updated date: 2025-11-21
+##################################################################################################
+# This file updated for RV32I Pipeline Verification
 ##################################################################################################
 
-# Define variables
-TESTNAME ?=               # testcase name, e.g. add / sub
-TB_NAME  ?= testbench
-RADIX    ?= hexadecimal
+# 1. Define variables
+# Tên test mặc định (nếu không nhập gì thì chạy rtype)
+TESTNAME    ?= rtype
+TB_NAME     ?= testbench
+RADIX       ?= hexadecimal
+SEED        ?= 1
 
-# Compute PLUSARG: if TESTNAME is empty, no +test=... will be added
-ifeq ($(strip $(TESTNAME)),)
-    PLUSARG =
-    LOGFILE = default.log
-else
-    PLUSARG = +test=$(TESTNAME)
-    LOGFILE = $(TESTNAME).log
-endif
+# 2. Define Hex Directory (Đường dẫn chứa các file hex của bạn)
+HEX_DIR     = /home/vinhha/source_for_linux/RV32I_Pipeline_BranchPredict_OpenLane/hex
 
 #==============================
 all: build run
@@ -25,9 +20,14 @@ build:
 	vmap work work
 	vlog -sv -f compile.f | tee compile.log
 
+# 3. Update Run Target
+# Thêm dòng +HEX_FILE để truyền đường dẫn vào SystemVerilog
 run:
-	vsim -debugDB -l $(LOGFILE) -voptargs=+acc -assertdebug -c $(TB_NAME) \
-	     $(PLUSARG) -do "log -r /*; run -all; quit"
+	vsim -sv_seed $(SEED) -debugDB -l $(TESTNAME).log \
+	-voptargs=+acc -assertdebug -c $(TB_NAME) \
+	-do "log -r /*;run -all;quit" \
+	+$(TESTNAME) \
+	+HEX_FILE=$(HEX_DIR)/instmem_$(TESTNAME).hex
 
 wave:
 	vsim -i -view vsim.wlf -do "add wave vsim:/$(TB_NAME)/*; radix -$(RADIX)" &
@@ -43,16 +43,11 @@ clean:
 help:
 	@echo ""
 	@echo "****************************************"
-	@echo "** make build: compile the design and testbench"
-	@echo "** make run  : run simulation"
-	@echo "**"
-	@echo "** Example:"
-	@echo "**   make run TESTNAME=add   -> passes +test=add to vsim"
-	@echo "**   make run TESTNAME=sub   -> passes +test=sub"
-	@echo "**   make run                -> no +test, use default testbench behavior"
-	@echo "**"
-	@echo "** make wave : open waveform"
-	@echo "** make clean: clean all compiled data"
+	@echo "** make build              : compile design"
+	@echo "** make run TESTNAME=rtype : run R-Type test (default)"
+	@echo "** make run TESTNAME=itype : run I-Type test"
+	@echo "** make run TESTNAME=jump  : run Jump test"
+	@echo "** make wave               : open waveform"
+	@echo "** make clean              : clean all"
 	@echo "****************************************"
 	@echo ""
-

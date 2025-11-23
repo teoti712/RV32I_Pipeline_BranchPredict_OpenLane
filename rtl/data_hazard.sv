@@ -39,7 +39,9 @@ module data_hazard (
             // branch resolved in EX: flush IF/ID (invalidate fetched instructions)
             if (i_pc_srcE) begin
                 o_flushD = 1'b1;
-            end
+                o_flushE = 1'b1;
+            
+	    end
 
             // Forwarding (applies both for normal instr. and for branch in EX)
             // Priority: M (2'b10) then W (2'b01)

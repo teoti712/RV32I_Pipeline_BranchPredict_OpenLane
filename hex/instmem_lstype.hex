@@ -1,0 +1,43 @@
+// --- 1. SETUP ADDRESS & DATA ---
+// Load 0x2000 vào x1 (Base Addr)
+000020B7  // 1. LUI x1, 2        -> x1 = 0x00002000
+
+// Load Pattern 0x55AA33CC vào x2 (Data to Store)
+// 0x55AA3 = 350883
+55AA3137  // 2. LUI x2, 0x55AA3  -> x2 = 0x55AA3000
+3CC10113  // 3. ADDI x2, x2, 0x3CC -> x2 = 0x55AA33CC
+
+// --- 2. STORE PHASE (Ghi vào Mem) ---
+// Mem[0x2000] = 0x55AA33CC
+0020A023  // 4. SW x2, 0(x1)  (Store Word)
+
+// Mem[0x2004] = 0x33CC (Lấy 16 bit thấp của x2)
+00209223  // 5. SH x2, 4(x1)  (Store Half)
+
+// Mem[0x2008] = 0xCC (Lấy 8 bit thấp của x2)
+00208423  // 6. SB x2, 8(x1)  (Store Byte)
+
+// --- 3. LOAD PHASE (Đọc lại kiểm tra) ---
+
+// Test LW: Đọc 0x2000 -> Kỳ vọng 0x55AA33CC
+0000A183  // 7. LW x3, 0(x1)
+
+// Test LHU: Đọc 0x2004 -> Kỳ vọng 0x000033CC (Unsigned)
+0040D203  // 8. LHU x4, 4(x1)
+
+// Test LH (Signed): Ghi đè 0xFFFF (-1) vào 0x200C trước
+// 0xFFF = -1 (12 bit)
+FFF00293  // 9.  ADDI x5, x0, -1 -> x5 = 0xFFFFFFFF
+00509623  // 10. SH   x5, 12(x1) -> Mem[0x200C] = 0xFFFF
+00C09303  // 11. LH   x6, 12(x1) -> Đọc lại. Kỳ vọng 0xFFFFFFFF (Signed Ext)
+00C0D383  // 12. LHU  x7, 12(x1) -> Đọc lại. Kỳ vọng 0x0000FFFF (Zero Ext)
+
+// Test LB/LBU: Đọc tại 0x2000 (Chứa byte CC = 11001100 -> số âm)
+00008403  // 13. LB  x8, 0(x1)   -> Kỳ vọng 0xFFFFFFCC (Sign Ext)
+0000C483  // 14. LBU x9, 0(x1)   -> Kỳ vọng 0x000000CC (Zero Ext)
+
+// --- END ---
+00000013
+00000013
+00000013
+

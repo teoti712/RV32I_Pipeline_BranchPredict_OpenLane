@@ -1,0 +1,47 @@
+// --- SETUP ---
+00A00093  // 1. ADDI x1, x0, 10   -> x1 = 10
+01400113  // 2. ADDI x2, x0, 20   -> x2 = 20
+FF600513  // 3. ADDI x10, x0, -10 -> x10 = -10 (0xFFFFFFF6)
+
+// --- TEST 1: BEQ (Branch if Equal) ---
+// BEQ x1, x1, +8 (Nhảy qua lệnh kế tiếp)
+00108463  // 4. BEQ x1, x1, offset=8
+00000193  // 5. ADDI x3, x0, 0    (FAIL nếu chạy vào đây)
+00100193  // 6. ADDI x3, x0, 1    (PASS: Target của BEQ)
+
+// --- TEST 2: BNE (Branch if Not Equal) ---
+// BNE x1, x2, +8
+00209463  // 7. BNE x1, x2, offset=8
+00000213  // 8. ADDI x4, x0, 0    (FAIL)
+00100213  // 9. ADDI x4, x0, 1    (PASS)
+
+// --- TEST 3: BLT (Signed Less Than) ---
+// BLT x10, x1, +8  (-10 < 10 -> True)
+00154463  // 10. BLT x10, x1, offset=8
+00000293  // 11. ADDI x5, x0, 0   (FAIL)
+00100293  // 12. ADDI x5, x0, 1   (PASS)
+
+// --- TEST 4: BGE (Signed Greater Equal) ---
+// BGE x1, x10, +8  (10 >= -10 -> True)
+00A0D463  // 13. BGE x1, x10, offset=8
+00000313  // 14. ADDI x6, x0, 0   (FAIL)
+00100313  // 15. ADDI x6, x0, 1   (PASS)
+
+// --- TEST 5: BLTU (Unsigned Less Than) ---
+// BLTU x10, x1, +8 (0xFF...F6 < 10 -> FALSE -> Không nhảy)
+00156463  // 16. BLTU x10, x1, offset=8
+00100393  // 17. ADDI x7, x0, 1   (PASS: Fallthrough vì không nhảy)
+0080006F  // [MỚI] JAL x0, 8 (Nhảy qua lệnh FAIL bên dưới)
+00000393  // 18. ADDI x7, x0, 0   (FAIL: Nếu nhảy là sai)
+
+// --- TEST 6: BGEU (Unsigned Greater Equal) ---
+// BGEU x10, x1, +8 (0xFF...F6 >= 10 -> True)
+00157463  // 19. BGEU x10, x1, offset=8
+00000413  // 20. ADDI x8, x0, 0   (FAIL)
+00100413  // 21. ADDI x8, x0, 1   (PASS)
+
+// --- END ---
+00000013
+00000013
+00000013
+

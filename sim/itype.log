@@ -1,5 +1,5 @@
-# vsim -debugDB -l default.log -voptargs="+acc" -assertdebug -c testbench -do "log -r /*; run -all; quit" 
-# Start time: 13:52:45 on Nov 23,2025
+# vsim -sv_seed 1 -debugDB -l itype.log -voptargs="+acc" -assertdebug -c testbench -do "log -r /*;run -all;quit" "+itype" "+HEX_FILE=/home/vinhha/source_for_linux/RV32I_Pipeline_BranchPredict_OpenLane/hex/instmem_itype.hex" 
+# Start time: 14:25:26 on Nov 23,2025
 # ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # ** Note: (vsim-8611) Generating debug db.
 # //  Questa Sim-64
@@ -44,10 +44,26 @@
 # Loading work.data_hazard(fast)
 # ** Note: (vsim-8900) Creating design debug database vsim.dbg.
 # log -r /*
-#  run -all
+# run -all
+# Loading Instruction Memory from: /home/vinhha/source_for_linux/RV32I_Pipeline_BranchPredict_OpenLane/hex/instmem_itype.hex
 # === START REAL SIMULATION ===
+# [SETUP] x1  =         16 (Expected: 16)
+# [ADDI]  x2  =         26 (Expected: 26)
+# [SLTI]  x3  =          1 (Expected: 1)
+# [SLTI]  x4  =          0 (Expected: 0)
+# [SLTIU] x5  =          1 (Expected: 1)
+# [XORI]  x6  =         31 (Expected: 31)
+# [ORI]   x7  =         48 (Expected: 48)
+# [ANDI]  x8  =          0 (Expected: 0)
+# [SLLI]  x9  =         64 (Expected: 64)
+# [SRLI]  x10 =          4 (Expected: 4)
+# [SRAI]  x11 =          4 (Expected: 4)
+# [ADDI-] x12 =         10 (Expected: 10) -> PASSED SIGN EXTENSION
+# [WB] rd= 0 val=00000000
+# [WB] rd= 0 val=00000000
+# [WB] rd= 0 val=00000000
 # === SIMULATION FINISHED ===
 # ** Note: $finish    : ../tb/testbench.sv(26)
 #    Time: 315 ns  Iteration: 1  Instance: /testbench
-# End time: 13:52:50 on Nov 23,2025, Elapsed time: 0:00:05
+# End time: 14:25:32 on Nov 23,2025, Elapsed time: 0:00:06
 # Errors: 0, Warnings: 0

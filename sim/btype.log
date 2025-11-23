@@ -1,7 +1,6 @@
-# vsim -debugDB -l default.log -voptargs="+acc" -assertdebug -c testbench -do "log -r /*; run -all; quit" 
-# Start time: 13:52:45 on Nov 23,2025
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# ** Note: (vsim-8611) Generating debug db.
+# vsim -sv_seed 1 -debugDB -l btype.log -voptargs="+acc" -assertdebug -c testbench -do "log -r /*;run -all;quit" "+btype" "+HEX_FILE=/home/vinhha/source_for_linux/RV32I_Pipeline_BranchPredict_OpenLane/hex/instmem_btype.hex" 
+# Start time: 14:34:35 on Nov 23,2025
+# ** Note: (vsim-8009) Loading existing optimized design _opt
 # //  Questa Sim-64
 # //  Version 2021.2_1 linux_x86_64 May 15 2021
 # //
@@ -42,12 +41,19 @@
 # Loading work.input_buffer(fast)
 # Loading work.MEMWB_pipepline(fast)
 # Loading work.data_hazard(fast)
-# ** Note: (vsim-8900) Creating design debug database vsim.dbg.
+# ** Note: (vsim-8716) Reusing existing debug database vsim.dbg.
 # log -r /*
-#  run -all
+# run -all
+# Loading Instruction Memory from: /home/vinhha/source_for_linux/RV32I_Pipeline_BranchPredict_OpenLane/hex/instmem_btype.hex
 # === START REAL SIMULATION ===
+# [BEQ]  Pass (Jumped Correctly)
+# [BNE]  Pass (Jumped Correctly)
+# [BLT]  Pass (Signed Check OK)
+# [BGE]  Pass (Signed Check OK)
+# [BLTU] Pass (Unsigned Check OK - Fallthrough)
+# [WB] rd= 0 val=00000048
 # === SIMULATION FINISHED ===
 # ** Note: $finish    : ../tb/testbench.sv(26)
 #    Time: 315 ns  Iteration: 1  Instance: /testbench
-# End time: 13:52:50 on Nov 23,2025, Elapsed time: 0:00:05
+# End time: 14:34:39 on Nov 23,2025, Elapsed time: 0:00:04
 # Errors: 0, Warnings: 0

@@ -1,5 +1,5 @@
-# vsim -debugDB -l test.log -voptargs="+acc" -assertdebug -c testbench -do "log -r /*;run -all;" 
-# Start time: 19:55:09 on Nov 21,2025
+# vsim -sv_seed 1 -debugDB -l utype.log -voptargs="+acc" -assertdebug -c testbench -do "log -r /*;run -all;quit" "+utype" "+HEX_FILE=/home/vinhha/source_for_linux/RV32I_Pipeline_BranchPredict_OpenLane/hex/instmem_utype.hex" 
+# Start time: 14:13:59 on Nov 23,2025
 # ** Note: (vsim-8009) Loading existing optimized design _opt
 # //  Questa Sim-64
 # //  Version 2021.2_1 linux_x86_64 May 15 2021
@@ -44,34 +44,15 @@
 # ** Note: (vsim-8716) Reusing existing debug database vsim.dbg.
 # log -r /*
 # run -all
-# ** Warning: (vsim-7) Failed to open readmem file "D:/single_cycle/00_src/instmem_data.hex" in read mode.
-# No such file or directory. (errno = ENOENT)    : ../rtl/fetch/instr_mem.sv(7)
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/u_fetch_stage/inst_mem_inst
-# ==== Selected test: add ====
-# 
-# Loaded 6 instructions:
-# inst[0] = 0x00500093
-# inst[1] = 0x00700113
-# inst[2] = 0x002081b3
-# inst[3] = 0x00218233
-# inst[4] = 0x002202b3
-# inst[5] = 0x00228333
-# [WB] time=105000: x1 <= 0x00000005
-# [WB] time=115000: x2 <= 0x00000007
-# [WB] time=125000: x3 <= 0x0000000c
-# [WB] time=135000: x4 <= 0x00000013
-# [WB] time=145000: x5 <= 0x0000001a
-# [WB] time=155000: x6 <= 0x00000021
-# 
-# ==== Final Results check ====
-# x1: expected=0x00000005  actual=0x00000005
-# x2: expected=0x00000007  actual=0x00000007
-# x3: expected=0x0000000c  actual=0x0000000c
-# x4: expected=0x00000013  actual=0x00000013
-# x5: expected=0x0000001a  actual=0x0000001a
-# x6: expected=0x00000021  actual=0x00000021
-# >>> TEST PASSED: add <<<
-# ** Note: $finish    : ../tb/testbench.sv(166)
-#    Time: 255 ns  Iteration: 1  Instance: /testbench
-# End time: 19:55:14 on Nov 21,2025, Elapsed time: 0:00:05
-# Errors: 0, Warnings: 1
+# Loading Instruction Memory from: /home/vinhha/source_for_linux/RV32I_Pipeline_BranchPredict_OpenLane/hex/instmem_utype.hex
+# === START REAL SIMULATION ===
+# [LUI]   Pass (Val: 12345000)
+# [AUIPC] Pass (PC+Imm correct)
+# [AUIPC] Pass (Captured PC=8)
+# [WB] rd= 0 val=00000000
+# [WB] rd= 0 val=00000000
+# === SIMULATION FINISHED ===
+# ** Note: $finish    : ../tb/testbench.sv(26)
+#    Time: 315 ns  Iteration: 1  Instance: /testbench
+# End time: 14:14:02 on Nov 23,2025, Elapsed time: 0:00:03
+# Errors: 0, Warnings: 0

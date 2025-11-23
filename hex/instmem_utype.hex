@@ -1,0 +1,19 @@
+// --- 1. TEST LUI (PC = 0x00) ---
+// LUI x1, 0x12345
+// Result: x1 = 0x12345 << 12 = 0x12345000
+123450B7  
+
+// --- 2. TEST AUIPC with Value (PC = 0x04) ---
+// AUIPC x2, 0x10000
+// Imm = 0x10000 << 12 = 0x10000000
+// Result: x2 = PC(4) + 0x10000000 = 0x10000004
+10000117
+
+// --- 3. TEST AUIPC with Zero (PC = 0x08) ---
+// AUIPC x3, 0
+// Result: x3 = PC(8) + 0 = 8
+00000197
+
+// --- END ---
+00000013
+00000013

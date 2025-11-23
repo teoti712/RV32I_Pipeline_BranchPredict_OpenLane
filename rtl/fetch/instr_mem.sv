@@ -1,11 +1,24 @@
 module inst_mem (
-	input   logic [31:0] i_pcF,
-	output  logic [31:0] o_instF);
+    input   logic [31:0] i_pcF,
+    output  logic [31:0] o_instF
+);
+    logic [3:0][7:0] imem [2**11-1:0];
     
-	logic [3:0][7:0] imem [2**11-1:0];
-	initial begin
-		$readmemh("D:/single_cycle/00_src/instmem_data.hex",imem);
-	end
-	
-	assign o_instF = imem[i_pcF[12:2]];
+    // Khai báo biến string để lưu đường dẫn file
+    string hex_filename;
+
+    initial begin
+        // Kiểm tra xem người dùng có nhập +HEX_FILE=... từ dòng lệnh không
+        if ($value$plusargs("HEX_FILE=%s", hex_filename)) begin
+            $display("Loading Instruction Memory from: %s", hex_filename);
+            $readmemh(hex_filename, imem);
+        end 
+        else begin
+            // Nếu không nhập thì load file mặc định hoặc báo lỗi
+            $display("WARNING: No HEX_FILE specified! Loading default.");
+            $readmemh("default.hex", imem); 
+        end
+    end
+    
+    assign o_instF = imem[i_pcF[12:2]];
 endmodule
