@@ -14,8 +14,9 @@ module execute_stage(
 
     output logic        o_branch_takenE,
     output logic [31:0] o_wr_dataE,
-    output logic [31:0] o_alu_resultE,
-    output logic [31:0] o_pc_targetE);
+    output logic [31:0] o_alu_resultE
+    //output logic [31:0] o_pc_targetE
+    );
 
     logic [31:0] w_mux_alu_srcAE;
     logic [31:0] w_mux_alu_srcBE;
@@ -44,10 +45,10 @@ module execute_stage(
         .i_A(w_mux_alu_srcBE),
         .i_B(i_immExtE),
         .o_mux(w_srcBE));
-    add add_inst(
+    /*add add_inst(
         .i_pcE(i_pcE),
         .i_immExtE(i_immExtE),
-        .o_pc_targetE(o_pc_targetE));
+        .o_pc_targetE(o_pc_targetE));*/
     alu alu_inst(
         .i_rs1_data(w_srcAE),
         .i_rs2_data(w_srcBE),

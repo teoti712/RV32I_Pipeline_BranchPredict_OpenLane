@@ -1,6 +1,4 @@
-QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
-Start time: 10:09:34 on Dec 19,2025
-vlog -sv -f compile.f 
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
 -- Compiling module inst_mem
 -- Compiling module pc
 -- Compiling module pc_plus4F
@@ -11,7 +9,6 @@ vlog -sv -f compile.f
 -- Compiling module control_unit
 -- Compiling module imm_gen
 -- Compiling module reg_file
--- Compiling module add
 -- Compiling module branch_resolve_unit
 -- Compiling module alu
 -- Compiling module branch
@@ -32,5 +29,3 @@ vlog -sv -f compile.f
 
 Top level modules:
 	testbench
-End time: 10:09:34 on Dec 19,2025, Elapsed time: 0:00:00
-Errors: 0, Warnings: 0

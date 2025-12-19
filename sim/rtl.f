@@ -8,7 +8,6 @@
 ../rtl/decode/control_unit.sv
 ../rtl/decode/imm_gen.sv
 ../rtl/decode/reg_file.sv
-../rtl/execute/add.sv
 ../rtl/execute/branch_resolve_unit.sv
 ../rtl/execute/alu.sv
 ../rtl/execute/branch.sv

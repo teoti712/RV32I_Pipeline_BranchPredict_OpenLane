@@ -1,8 +1,6 @@
 module pipeline(
     input logic i_clk,
     input logic i_rst_n,
-    input logic [31:0] i_io_sw,
-    input logic [3:0] i_io_btn,
    // Outputs:
     output logic [31:0] o_ld_data,//
     output logic [1:0]  o_result_srcW);
@@ -194,7 +192,7 @@ logic [31:0] w_wr_dataE;
 logic [31:0] w_alu_resultE;
 logic        w_branch_takenE; //
 logic [31:0] w_alu_resultM;
-logic [31:0] w_actual_targetE;
+//logic [31:0] w_actual_targetE;
 execute_stage u_execute_stage (
     .i_instE        (w_instE),
     .i_rs1_dataE    (w_rs1_dataE),
@@ -210,8 +208,9 @@ execute_stage u_execute_stage (
     .i_alu_ctrlE    (w_alu_ctrlE),
     .o_branch_takenE(w_branch_takenE), //
     .o_wr_dataE     (w_wr_dataE),
-    .o_alu_resultE  (w_alu_resultE),
-    .o_pc_targetE   (w_actual_targetE));
+    .o_alu_resultE  (w_alu_resultE)
+    //.o_pc_targetE   (w_actual_targetE)
+    );
 
 
 //jump
