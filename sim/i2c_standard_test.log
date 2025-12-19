@@ -1,6 +1,8 @@
 # vsim -sv_seed 1 -debugDB -l i2c_standard_test.log -voptargs="+acc" -assertdebug -c testbench -do "log -r /*;run -all;" "+i2c_standard_test" 
-# Start time: 21:20:32 on Dec 18,2025
-# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Start time: 10:09:38 on Dec 19,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Note: (vsim-8611) Generating debug db.
+# ** Note: (vopt-4301) Memory core inferred for signal 'imem' width=32, depth=2048, type=ROM at location ../rtl/fetch/instr_mem.sv:5
 # //  Questa Sim-64
 # //  Version 2021.2_1 linux_x86_64 May 15 2021
 # //
@@ -42,28 +44,26 @@
 # Loading work.EXMEM_register(fast)
 # Loading work.lsu(fast)
 # Loading work.dmem(fast)
-# Loading work.output_buffer(fast)
-# Loading work.input_buffer(fast)
 # Loading work.MEMWB_pipepline(fast)
 # Loading work.data_hazard(fast)
-# ** Note: (vsim-8716) Reusing existing debug database vsim.dbg.
+# ** Note: (vsim-8900) Creating design debug database vsim.dbg.
 # log -r /*
 # run -all
 # ====================================
 #  REGISTER FILE DUMP 
 # ====================================
 # x0 = 0x00000000 (0)
-# x1 = 0x00010000 (65536)
-# x2 = 0xfffff000 (4294963200)
-# x3 = 0x00010008 (65544)
-# x4 = 0x0000000c (12)
-# x5 = 0x00000005 (5)
-# x6 = 0x00000000 (0)
-# x7 = 0x00000000 (0)
-# x8 = 0x00000000 (0)
-# x9 = 0x00000000 (0)
-# x10 = 0x00000000 (0)
-# x11 = 0x00000000 (0)
+# x1 = 0x00002000 (8192)
+# x2 = 0x00000078 (120)
+# x3 = 0x00000056 (86)
+# x4 = 0x00000034 (52)
+# x5 = 0x00000012 (18)
+# x6 = 0x12345678 (305419896)
+# x7 = 0x00005678 (22136)
+# x8 = 0x00005678 (22136)
+# x9 = 0x00000078 (120)
+# x10 = 0x00000078 (120)
+# x11 = 0x12345678 (305419896)
 # x12 = 0x00000000 (0)
 # x13 = 0x00000000 (0)
 # x14 = 0x00000000 (0)
@@ -87,5 +87,5 @@
 # ====================================
 # ** Note: $finish    : ../tb/testbench.sv(52)
 #    Time: 5550 ns  Iteration: 0  Instance: /testbench
-# End time: 21:20:36 on Dec 18,2025, Elapsed time: 0:00:04
+# End time: 10:09:42 on Dec 19,2025, Elapsed time: 0:00:04
 # Errors: 0, Warnings: 0

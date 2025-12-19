@@ -15,8 +15,6 @@
 ../rtl/execute/mux_alu_src.sv
 ../rtl/execute/mux_forward.sv
 ../rtl/memory/lsu/dmem.sv
-../rtl/memory/lsu/input_buffer.sv
-../rtl/memory/lsu/output_buffer.sv
 ../rtl/memory/lsu/lsu.sv
 ../rtl/pipeline/fetch_stage.sv
 ../rtl/pipeline/decode_stage.sv

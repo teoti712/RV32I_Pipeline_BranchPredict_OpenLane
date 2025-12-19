@@ -4,7 +4,7 @@ module inst_mem (
     
 	logic [3:0][7:0] imem [2**11-1:0];
 	initial begin
-		$readmemh("../hex/instmem_utype.hex",imem);
+		$readmemh("../hex/instmem_lstype.hex",imem);
 	end
 	
 	assign o_instF = imem[i_pcF[12:2]];

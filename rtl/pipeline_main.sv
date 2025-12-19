@@ -4,18 +4,8 @@ module pipeline(
     input logic [31:0] i_io_sw,
     input logic [3:0] i_io_btn,
    // Outputs:
-    output logic [31:0] o_ld_data,
-    output logic [31:0] o_io_ledr,
-    output logic [31:0] o_io_ledg,
-    output logic [6:0] o_io_hex0,
-    output logic [6:0] o_io_hex1,
-    output logic [6:0] o_io_hex2,
-    output logic [6:0] o_io_hex3,
-    output logic [6:0] o_io_hex4,
-    output logic [6:0] o_io_hex5,
-    output logic [6:0] o_io_hex6,
-    output logic [6:0] o_io_hex7,
-    output logic [31:0] o_io_lcd);
+    output logic [31:0] o_ld_data,//
+    output logic [1:0]  o_result_srcW);
 
 logic        w_stallF;
 //logic        w_pc_srcE;
@@ -280,20 +270,7 @@ lsu u_lsu (
     .i_lsu_addr  (w_alu_resultM),
     .i_st_data   (w_wr_dataM),
     .i_lsu_wren  (w_mem_wrM),
-    .i_io_sw     (i_io_sw),
-    .i_io_btn    (i_io_btn),
-    .o_ld_data   (w_ld_dataM),
-    .o_io_ledr   (o_io_ledr),
-    .o_io_ledg   (o_io_ledg),
-    .o_io_hex0   (o_io_hex0),
-    .o_io_hex1   (o_io_hex1),
-    .o_io_hex2   (o_io_hex2),
-    .o_io_hex3   (o_io_hex3),
-    .o_io_hex4   (o_io_hex4),
-    .o_io_hex5   (o_io_hex5),
-    .o_io_hex6   (o_io_hex6),
-    .o_io_hex7   (o_io_hex7),
-    .o_io_lcd    (o_io_lcd));
+    .o_ld_data   (w_ld_dataM));
 
 logic [31:0] w_alu_resultW;
 logic [31:0] w_ld_dataW;
@@ -341,5 +318,8 @@ data_hazard u_data_hazard (
     .o_flushE      (w_flushE),
     .o_forwardAE   (w_forwardAE),
     .o_forwardBE   (w_forwardBE));
+
+assign o_ld_data = w_resultW;
+assign o_result_srcW = w_result_srcW;
 endmodule
 

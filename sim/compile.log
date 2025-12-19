@@ -1,5 +1,5 @@
 QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
-Start time: 21:20:25 on Dec 18,2025
+Start time: 10:09:34 on Dec 19,2025
 vlog -sv -f compile.f 
 -- Compiling module inst_mem
 -- Compiling module pc
@@ -18,8 +18,6 @@ vlog -sv -f compile.f
 -- Compiling module mux_alu_src
 -- Compiling module mux_forward
 -- Compiling module dmem
--- Compiling module input_buffer
--- Compiling module output_buffer
 -- Compiling module lsu
 -- Compiling module fetch_stage
 -- Compiling module decode_stage
@@ -34,5 +32,5 @@ vlog -sv -f compile.f
 
 Top level modules:
 	testbench
-End time: 21:20:26 on Dec 18,2025, Elapsed time: 0:00:01
+End time: 10:09:34 on Dec 19,2025, Elapsed time: 0:00:00
 Errors: 0, Warnings: 0
