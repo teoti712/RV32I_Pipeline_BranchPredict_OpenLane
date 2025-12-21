@@ -42,15 +42,12 @@ module testbench;
         $display(" REGISTER FILE DUMP ");
         $display("====================================");
 
-for (i = 0; i < 32; i = i + 1) begin
-    $display(
-        "x%0d = 0x%08h (%0d)",
-        i,
-        dut.u_decode_stage.reg_file_inst.regf[i],
-        $signed(dut.u_decode_stage.reg_file_inst.regf[i])
-    );
-end
-
+        for (i = 0; i < 32; i = i + 1) begin
+            $display("x%0d = 0x%08h (%0d)",
+                i,
+                dut.u_decode_stage.reg_file_inst.regf[i],dut.u_decode_stage.reg_file_inst.regf[i]
+            );
+        end
 
         $display("====================================");
 

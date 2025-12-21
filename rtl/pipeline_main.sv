@@ -24,6 +24,10 @@ logic [7:0] w_pht_idxF;
 logic       w_pred_takenF;
 logic [31:0]w_pred_targetF;
 
+logic [31:0] w_alu_resultE;
+
+logic        w_branchE;
+assign w_targetE = w_alu_resultE;
 
 fetch_stage u_fetch_stage (
     .i_clk       (i_clk),
@@ -34,7 +38,7 @@ fetch_stage u_fetch_stage (
     .o_instF     (w_instF),
     .o_pcF       (w_pcF),
     .o_pc_plus4F (w_pc_plus4F),
-    .i_is_branchE(w_is_branchE),
+    .i_is_branchE(w_branchE),
     .i_actual_takenE(w_actual_takenE),
     .i_pht_idxE(w_pht_idxE),
     .i_pcE(w_pcE),
@@ -126,7 +130,6 @@ logic        w_reg_wrE;
 logic [1:0]  w_result_srcE;
 logic        w_mem_wrE;
 logic        w_jumpE;
-logic        w_branchE;
 logic [3:0]  w_alu_ctrlE;
 logic        w_alu_srcAE;
 logic        w_alu_srcBE;
@@ -189,7 +192,6 @@ IDEX_register u_IDEX_register (
 logic [1:0]  w_forwardAE;
 logic [1:0]  w_forwardBE;
 logic [31:0] w_wr_dataE;
-logic [31:0] w_alu_resultE;
 logic        w_branch_takenE; //
 logic [31:0] w_alu_resultM;
 //logic [31:0] w_actual_targetE;

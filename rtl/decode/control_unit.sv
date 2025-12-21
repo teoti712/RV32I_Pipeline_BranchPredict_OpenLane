@@ -65,7 +65,7 @@ module control_unit (
                             3'b010: alu_ctrlD = 4'd7; // SLTI
                             3'b011: alu_ctrlD = 4'd8; // SLTIU
                             3'b100: alu_ctrlD = 4'd4; // XORI
-                            3'b101: begin              // SRLI or SRAI depending on bit30
+                            3'b101: begin             
                                 if (i_func7[5]) alu_ctrlD = 4'd9; // SRAI
                                 else            alu_ctrlD = 4'd3; // SRLI
                                 end
@@ -78,7 +78,7 @@ module control_unit (
             op_LOAD:  {reg_wrD, result_srcD, mem_wrD, jumpD, branchD, alu_ctrlD, alu_srcAD, alu_srcBD} = {1'b1, 2'b01, 1'b0, 1'b0, 1'b0, 4'd0, 1'b0, 1'b1};
             op_STORE: {reg_wrD, result_srcD, mem_wrD, jumpD, branchD, alu_ctrlD, alu_srcAD, alu_srcBD} = {1'b0, 2'b00, 1'b1, 1'b0, 1'b0, 4'd0, 1'b0, 1'b1};
             op_JAL:   {reg_wrD, result_srcD, mem_wrD, jumpD, branchD, alu_ctrlD, alu_srcAD, alu_srcBD} = {1'b1, 2'b10, 1'b0, 1'b1, 1'b0, 4'd0, 1'b1, 1'b1};
-            op_JALR:  {reg_wrD, result_srcD, mem_wrD, jumpD, branchD, alu_ctrlD, alu_srcAD, alu_srcBD} = {1'b1, 2'b10, 1'b0, 1'b1, 1'b0, 4'd0, 1'b0, 1'b1};
+            op_JALR:  {reg_wrD, result_srcD, mem_wrD, jumpD, branchD, alu_ctrlD, alu_srcAD, alu_srcBD} = {1'b1, 2'b10, 1'b0, 1'b1, 1'b0, 4'd11, 1'b0, 1'b1};
             op_LUI:   {reg_wrD, result_srcD, mem_wrD, jumpD, branchD, alu_ctrlD, alu_srcAD, alu_srcBD} = {1'b1, 2'b00, 1'b0, 1'b0, 1'b0, 4'd10,1'b0, 1'b1};
             op_AUIPC: {reg_wrD, result_srcD, mem_wrD, jumpD, branchD, alu_ctrlD, alu_srcAD, alu_srcBD} = {1'b1, 2'b00, 1'b0, 1'b0, 1'b0, 4'd0, 1'b1, 1'b1};
             default:  {reg_wrD, result_srcD, mem_wrD, jumpD, branchD, alu_ctrlD, alu_srcAD, alu_srcBD} = {1'b0, 2'b00, 1'b0, 1'b0, 1'b0, 4'd0, 1'b0, 1'b0};

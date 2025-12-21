@@ -2,8 +2,10 @@ module inst_mem (
     input   logic [31:0] i_pcF,
     output  logic [31:0] o_instF
 );
-    logic [3:0][7:0] imem [2**11-1:0];
-    
+
+    // Byte-addressed instruction memory
+    logic [7:0] imem [0:2**13-1]; // ví dụ 8KB
+
     string hex_filename;
 
     initial begin
@@ -16,6 +18,13 @@ module inst_mem (
             $readmemh("default.hex", imem); 
         end
     end
-    
-    assign o_instF = imem[i_pcF[12:2]];
+
+    // Little-endian instruction fetch
+    assign o_instF = {
+        imem[i_pcF + 3],
+        imem[i_pcF + 2],
+        imem[i_pcF + 1],
+        imem[i_pcF + 0]
+    };
+
 endmodule

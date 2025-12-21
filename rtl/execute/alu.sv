@@ -21,7 +21,8 @@ module alu (
             4'b1000: o_alu_resultE = (i_rs1_data < i_rs2_data) ? 32'd1 : 32'd0;                    // SLTU
             4'b1001: o_alu_resultE = $signed(i_rs1_data) >>> shamt;        // SRA
             4'b1010: o_alu_resultE = i_rs2_data;                           // LUI (or custom)
-            default: o_alu_resultE = 32'd0;
+            4'b1011: o_alu_resultE = (i_rs1_data + i_rs2_data) & 32'hFFFF_FFFC; // align for JALR
+            default: o_alu_resultE = 32'd0; 
         endcase
     end
 endmodule

@@ -1,0 +1,4 @@
+addi x1, x0, -9
+addi x2, x0, -6
+sub x3, x1, x2
+
