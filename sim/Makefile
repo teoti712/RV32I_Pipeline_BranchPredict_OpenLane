@@ -13,7 +13,7 @@ SEED     ?= 1
 # ==============================
 # 2. HEX directory (KHÔNG đổi)
 # ==============================
-HEX_DIR := /c/Users/VINH\ HA/Documents/Documents/tailieu/TAILIEUMONHOC/DOAN2/source_final1/RV32I_Pipeline_BranchPredict_OpenLane/hex
+HEX_DIR := /c/Users/VINH\ HA/Documents/Documents/tailieu/TAILIEUMONHOC/DOAN2/git/final4/RV32I_Pipeline_BranchPredict_OpenLane/hex
 
 # ==============================
 # 3. Targets
